@@ -26,6 +26,8 @@
 | :-----------------------------------------------------: |
 | [Vídeo](https://jam.dev/c/636f8f34-e2d1-432d-a7b0-dead44c3b654)      |
 
+---
+
 ### Caso de Teste 02: Tentativa de acesso com senha incorreta.
 
 | ID | Descrição |
@@ -50,7 +52,9 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo](https://jam.dev/c/02a61d44-1616-4bb4-9a18-60c2053eade0)  
+| [Vídeo](https://jam.dev/c/02a61d44-1616-4bb4-9a18-60c2053eade0)      |
+
+---
 
 ### Caso de Teste 03: Tentativa de acesso com campos obrigatórios vazios.
 
@@ -75,4 +79,4 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo](https://jam.dev/c/3ebcc976-9012-471d-a577-6177221fd267)  
+| [Vídeo](https://jam.dev/c/3ebcc976-9012-471d-a577-6177221fd267)      |
