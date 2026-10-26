@@ -127,3 +127,42 @@
   * O sistema deve permitir cadastrar, alterar, inativar e excluir despesas fixas com valor e recorrência, aceitando somente valores positivos.
 
 ---
+
+
+### 💪 **RF14 - Fichas de Treino e Exercícios**
+
+  * O sistema deve permitir cadastrar fichas de treino para os alunos (aluno, personal, período e objetivo), montar os treinos com exercícios da biblioteca, visualizar e excluir fichas.
+
+  * O sistema deve manter a biblioteca de exercícios organizada por grupo muscular, permitindo cadastrar, alterar e excluir exercícios sem duplicidade.
+
+---
+
+
+### 🎯 **RF15 - Prospecção**
+
+  * O sistema deve permitir cadastrar, buscar (por nome, e-mail, telefone ou código), filtrar (por estágio), alterar e excluir leads, acompanhando sua evolução pelos estágios Novo Contato, Interessado, Fez Aula Experimental, Proposta e Fechado, sem permitir leads duplicados.
+
+---
+
+
+### 🧑‍💼 **RF16 - Colaboradores e Funções**
+
+  * O sistema deve permitir cadastrar, buscar, alterar, inativar e excluir colaboradores, além de vincular funções a cada colaborador.
+
+  * O sistema deve permitir cadastrar, filtrar, alterar e excluir funções (internas ou externas, personal e avaliador), sem duplicidade, e definir as permissões de acesso de cada função.
+
+---
+
+
+### 🛍️ **RF17 - Produtos**
+
+  * O sistema deve permitir cadastrar, buscar, filtrar (por status e tipo), alterar, inativar e excluir produtos de venda (com preço positivo) e de troca por pontos (com pontuação), exibindo os valores no formato monetário brasileiro.
+
+---
+
+
+### 🩺 **RF18 - Fichas de Anamnese**
+
+  * O sistema deve permitir aplicar anamneses aos alunos por meio de um assistente (seleção do aluno, escolha do modelo, resposta às perguntas e finalização), exibindo as fichas aplicadas na listagem com busca, filtro de status e indicadores.
+
+---

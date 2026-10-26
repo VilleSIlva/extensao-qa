@@ -22,7 +22,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/b1c527ff-d8b0-4c51-a962-a32348beab98)      |
 
 ---
 
@@ -49,7 +49,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/1a48e93b-6754-48a9-8b3e-302281e1b967)      |
 
 ---
 
@@ -76,7 +76,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/1400615a-e41d-4ab8-95d5-5a68bd56510d)      |
 
 ---
 
@@ -103,7 +103,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/e36fb928-6b21-4210-b361-cc99a1358cf9)      |
 
 ---
 
@@ -130,7 +130,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/a38cb135-f8d3-43d6-8385-f821247140da)      |
 
 ---
 
@@ -157,7 +157,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/7e9313e8-1a42-4e1f-99be-f22711d0d555)      |
 
 ---
 
@@ -184,7 +184,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/b2527661-b09d-4792-b31d-a0e24e09bdc0)      |
 
 ---
 
@@ -202,7 +202,6 @@
 | :--- |
 | **DADO** que estamos na tela "Cadastrar Cliente" |
 | **E** informamos o nome "Teste Ville Nunes", o status "Ativo", o sexo e uma data de nascimento válida |
-| **E** preenchemos CPF, celular, e-mail e endereço válidos |
 | **QUANDO** clicarmos no botão "Cadastrar Cliente" |
 | **ENTÃO** o sistema deverá exibir mensagem de sucesso e o cliente deverá constar na listagem |
 
@@ -212,7 +211,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/e21003f6-a3e5-4f6f-9ea2-755f25b7ff91)      |
 
 ---
 
@@ -238,7 +237,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/aa6dbfa6-1c39-4d8a-b536-86d4b806198e)      |
 
 ---
 
@@ -266,7 +265,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/ef0c7a28-0a2f-4bb6-9c78-3fc0995ec51f)      |
 
 ---
 
@@ -293,4 +292,4 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/a0153288-ba95-4015-852c-17228345f666)      |

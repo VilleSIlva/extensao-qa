@@ -22,7 +22,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/7560748c-9dc3-4164-8d59-8e21cd36c23d)      |
 
 ---
 
@@ -49,7 +49,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/5d2ad698-91fa-4d9f-a9f0-64f26dc274dc)      |
 
 ---
 
@@ -76,7 +76,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/7cde0ad8-fe3a-4a3b-9a14-0805dca3875b)      |
 
 ---
 
@@ -102,7 +102,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/1341e429-03e5-4ef6-84bd-9595ba1f5ad5)      |
 
 ---
 
@@ -128,7 +128,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/9b8a90d6-7d67-426f-8c6b-48eb4b8e1296)      |
 
 ---
 
@@ -154,42 +154,15 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/224185a5-a0f6-4082-9d54-b8355fb55065)      |
 
 ---
 
-### Caso de Teste 07: Ação "Cobrar agora".
+### Caso de Teste 07: Links de navegação da Página Inicial.
 
 | ID | Descrição |
 | :--- | :--- |
-| C02-CT07 | Verificar se o botão "Cobrar agora" das ações recomendadas inicia a cobrança dos alunos com pagamento em aberto. |
-
-| **Pré-condições** |
-| :--- |
-| O usuário deve estar autenticado e existir aluno com pagamento em aberto. |
-
-| **Passos** |
-| :--- |
-| **DADO** que estamos na Página Inicial |
-| **E** a ação recomendada exibe "Cobrar 1 alunos com pagamento em aberto" |
-| **QUANDO** clicarmos no botão "Cobrar agora" |
-| **ENTÃO** o sistema deverá exibir a lista de alunos a cobrar ou as opções de cobrança |
-
-| **Critérios de aceitação** |
-| :--- |
-| O botão deve executar uma ação visível ao usuário. |
-
-|                    **Evidência(s)**                     |
-| :-----------------------------------------------------: |
-| [Vídeo]()      |
-
----
-
-### Caso de Teste 08: Links de navegação da Página Inicial.
-
-| ID | Descrição |
-| :--- | :--- |
-| C02-CT08 | Verificar se os links da Página Inicial direcionam para as telas corretas. |
+| C02-CT07 | Verificar se os links da Página Inicial direcionam para as telas corretas. |
 
 | **Pré-condições** |
 | :--- |
@@ -207,4 +180,4 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/ebe16560-9f44-4e26-9e7a-1eb6d9e48a49)      |

@@ -34,14 +34,14 @@ Realizar a verificação manual dos principais requisitos funcionais do SIFIT, c
 * Turmas e SifitBox
 * Caixas
 * Contas a pagar e Despesas fixas
-
-**Incluído (pendente de execução):**
-
 * Fichas de treino e Exercícios
 * Prospecção
 * Colaboradores e Funções
 * Produtos
 * Fichas de anamnese
+
+**Incluído (pendente de execução):**
+
 * Relatórios
 * Cadastros auxiliares (Grupos, Tipos de pagamento, Bandeiras, Modelos de contrato, Grupos musculares, Objetivos de treino e Tipos de documentos)
 
@@ -125,15 +125,15 @@ A sequência segue o fluxo de uso do sistema: acesso, visão geral, cadastro do 
 | RF11      | Turmas e SifitBox                        | Média      | ✅ Executado  |
 | RF12      | Caixas                                   | Alta       | ✅ Executado  |
 | RF13      | Contas a Pagar e Despesas Fixas          | Alta       | ✅ Executado  |
-| RF14      | Fichas de Treino e Exercícios            | Média      | ⏳ Pendente   |
-| RF15      | Prospecção                               | Média      | ⏳ Pendente   |
-| RF16      | Colaboradores e Funções                  | Média      | ⏳ Pendente   |
-| RF17      | Produtos                                 | Baixa      | ⏳ Pendente   |
-| RF18      | Fichas de Anamnese                       | Baixa      | ⏳ Pendente   |
+| RF14      | Fichas de Treino e Exercícios            | Média      | ✅ Executado  |
+| RF15      | Prospecção                               | Média      | ✅ Executado  |
+| RF16      | Colaboradores e Funções                  | Média      | ✅ Executado  |
+| RF17      | Produtos                                 | Baixa      | ✅ Executado  |
+| RF18      | Fichas de Anamnese                       | Baixa      | ✅ Executado  |
 | RF19      | Relatórios                               | Média      | ⏳ Pendente   |
 | RF20      | Cadastros Auxiliares                     | Baixa      | ⏳ Pendente   |
 
-**Resumo:** 13 de 20 módulos executados, com 132 casos de teste e 59 bugs registrados até o momento.
+**Resumo:** 18 de 20 módulos executados, com 191 casos de teste e 76 bugs registrados até o momento.
 
 ---
 
@@ -157,7 +157,7 @@ A sequência segue o fluxo de uso do sistema: acesso, visão geral, cadastro do 
 | --------------------------------------------------------------------- | ------- | -------------------------------------------------------------------- |
 | Sistema fora do ar ou instável                                        | Alto    | Tentar novamente após intervalo                                      |
 | Ambiente compartilhado: outros usuários alteram ou excluem dados      | Médio   | Identificar os registros de teste com "Ville" no nome e conferir os dados antes de gravar |
-| Cadastro e alteração de clientes e fornecedores indisponíveis (BUG-008, BUG-013, BUG-033 e BUG-034) | Alto | Usar registros já existentes e reexecutar os testes após a correção |
+| Cadastro e alteração de clientes e fornecedores indisponíveis (BUG-007, BUG-012, BUG-032 e BUG-033) | Alto | Usar registros já existentes e reexecutar os testes após a correção |
 | Ações que enviam mensagens ou cobranças reais (WhatsApp e Pagar.me)  | Alto    | Manter essas ações fora do escopo                                    |
 | Testes limitados a um único usuário (perfil administrador)            | Médio   | Documentar esse limite no escopo                                     |
 
