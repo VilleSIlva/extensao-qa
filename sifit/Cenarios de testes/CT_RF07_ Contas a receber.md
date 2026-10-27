@@ -22,7 +22,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo](https://jam.dev/c/86b8664e-46a9-4911-aa48-8f5b3c65cac5d)      |
+| [Vídeo](https://jam.dev/c/86b8664e-46a9-4911-aa48-8f5b3c65cac5)      |
 
 ---
 
@@ -39,9 +39,9 @@
 | **Passos** |
 | :--- |
 | **DADO** que estamos na tela de contas a receber |
-| **E** informamos "lila" no campo "Nome do cliente" |
+| **E** informamos "Steven Kaiki" no campo "Nome do cliente" |
 | **QUANDO** clicarmos no botão "Buscar" |
-| **ENTÃO** a listagem deverá exibir apenas as contas da cliente Lila |
+| **ENTÃO** a listagem deverá exibir apenas as contas do cliente Steven Kaiki |
 
 | **Critérios de aceitação** |
 | :--- |
@@ -202,13 +202,12 @@
 | :--- |
 | **DADO** que estamos visualizando uma conta pendente |
 | **E** clicamos em "Efetuar Recebimento" |
-| **E** selecionamos o tipo de pagamento "Dinheiro" e o local "Caixa Academia" |
 | **QUANDO** clicarmos em "Salvar" e confirmarmos a mensagem do caixa |
-| **ENTÃO** a conta deverá constar com status "RECEBIDO" e o indicador "Recebido no Mês" deverá ser atualizado |
+| **ENTÃO** a conta deverá constar com status "RECEBIDO" e o indicador "Entradas" deverá ser atualizado |
 
 | **Critérios de aceitação** |
 | :--- |
-| O sistema deve registrar o recebimento e atualizar o status e os indicadores. |
+| O sistema deve registrar o recebimento, atualizar o status da conta e o indicador de entradas. |
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |

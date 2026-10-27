@@ -78,7 +78,7 @@
 | BUG-028 | Recebimento é registrado sem tipo de pagamento                        | Média      | Aberto |
 | BUG-029 | Recebimento aceita valor maior que o valor a receber sem alerta       | Baixa      | Aberto |
 | BUG-030 | Ausência de mensagem quando a busca não encontra contas a receber     | Baixa      | Aberto |
-| BUG-031 | Busca por código inexistente ou parcial retorna todos os fornecedores | Baixa      | Aberto |
+| BUG-031 | Busca por código inexistente exibe erro no servidor e mantém todos os fornecedores | Baixa | Aberto |
 | BUG-032 | Erro ao cadastrar fornecedor com dados válidos                        | Alta       | Aberto |
 | BUG-033 | Erro interno com exposição de SQL ao alterar fornecedor               | Alta       | Aberto |
 | BUG-034 | Check-ins realizados não aparecem na tela de Presenças                | Alta       | Aberto |

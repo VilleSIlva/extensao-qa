@@ -22,7 +22,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/69d7efa4-7ef3-469d-b585-4dec4def49c7)      |
 
 ---
 
@@ -49,7 +49,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/51320744-ffac-4597-bea6-7a6a506840b5)      |
 
 ---
 
@@ -76,7 +76,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/65fecda6-95e0-48e4-b5ce-8ae6aa041750)      |
 
 ---
 
@@ -103,7 +103,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/7e669c65-5f1a-4cc5-b773-2062825d4618)      |
 
 ---
 
@@ -130,7 +130,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/01f3c41f-cf4f-4bd8-be46-8dd4be1f13c7)      |
 
 ---
 
@@ -157,7 +157,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/2c2c4c60-b617-44b6-8337-1cc44e327fd9)      |
 
 ---
 
@@ -174,7 +174,7 @@
 | **Passos** |
 | :--- |
 | **DADO** que estamos na tela de fornecedores |
-| **QUANDO** clicarmos no botão "Visualizar" (lupa) do fornecedor "Jao" |
+| **QUANDO** clicarmos no botão "Visualizar" (lupa) do fornecedor "Jasira Souzas" |
 | **ENTÃO** deverá ser exibida a janela "Visualizar Fornecedor" com os dados principais, documentos, contato e endereço |
 
 | **Critérios de aceitação** |
@@ -183,7 +183,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/a883bf5b-f0a8-4747-b1bf-60b364abd224)      |
 
 ---
 
@@ -211,7 +211,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/1bd0c308-c44d-42f3-8560-57ce86b98b1b)      |
 
 ---
 
@@ -238,4 +238,4 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/cbe09523-b594-4d9f-b8f0-95b4e2c6bf0d)      |

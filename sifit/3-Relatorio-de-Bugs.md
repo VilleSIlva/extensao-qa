@@ -1036,7 +1036,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/e32d62f2-82da-4f71-b65d-8c9ebfff90c1) |
 
 ---
 
@@ -1075,7 +1075,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/46be9dfa-3e49-40c1-a8f7-0771f9f8a67e) |
 
 ---
 
@@ -1114,7 +1114,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/f28fd023-7766-4e7e-87eb-419aad2d2797) |
 
 ---
 
@@ -1152,15 +1152,15 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/22ec822a-9cc2-412b-b1dd-3354f81136a8) |
 
 ---
 
-### 🐞 **Bug 31: Busca por código inexistente ou parcial retorna todos os fornecedores**
+### 🐞 **Bug 31: Busca por código inexistente exibe erro no servidor e mantém todos os fornecedores**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-031 | Ao pesquisar um código que não existe (ex.: "999") ou parte de um código (ex.: "29"), a listagem exibe todos os 8 fornecedores cadastrados, como se nenhum filtro tivesse sido aplicado. A busca funciona somente com o código exato (ex.: "394"). |
+| BUG-031 | Ao pesquisar um código que não existe (ex.: "999"), o sistema exibe a janela "Erro no servidor - Ocorreu um erro interno no servidor" e a listagem continua exibindo todos os 8 fornecedores cadastrados, em vez de informar que nenhum fornecedor foi encontrado. Em testes anteriores, a busca por código inexistente ou parcial (ex.: "29") também retornava todos os fornecedores. A busca funciona somente com o código exato (ex.: "394"). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -1175,7 +1175,7 @@
 
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| A listagem não deve exibir fornecedores e o sistema deve informar que nenhum fornecedor foi encontrado. | A listagem exibe todos os 8 fornecedores cadastrados. |
+| A listagem não deve exibir fornecedores e o sistema deve informar que nenhum fornecedor foi encontrado. | O sistema exibe "Erro no servidor" e a listagem continua com todos os 8 fornecedores. |
 
 | **Ambiente** |
 | ------------------------ |
@@ -1190,7 +1190,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/7e669c65-5f1a-4cc5-b773-2062825d4618) |
 
 ---
 
@@ -1229,7 +1229,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/2c2c4c60-b617-44b6-8337-1cc44e327fd9) |
 
 ---
 
@@ -1268,7 +1268,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/1bd0c308-c44d-42f3-8560-57ce86b98b1b) |
 
 ---
 
