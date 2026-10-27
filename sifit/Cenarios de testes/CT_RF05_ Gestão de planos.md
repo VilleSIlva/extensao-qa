@@ -22,7 +22,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/f218079a-29e4-4378-9d5c-2c7b75b45d6a)      |
 
 ---
 
@@ -34,13 +34,13 @@
 
 | **Pré-condições** |
 | :--- |
-| O usuário deve estar autenticado e existirem matrículas ativas (ex.: plano "Treino Livre", R$ 52,00, com 2 alunos). |
+| O usuário deve estar autenticado e existirem matrículas ativas (ex.: plano "Treino Livre", R$ 52,00, com 1 aluno). |
 
 | **Passos** |
 | :--- |
 | **DADO** que estamos na tela de planos |
 | **QUANDO** observarmos a coluna "Alunos" do plano "Treino Livre", o ranking e o indicador "Receita Estimada" |
-| **ENTÃO** a coluna deverá exibir 2 alunos, o ranking deverá exibir a mensalidade de R$ 52,00 e a receita estimada deverá ser maior que zero |
+| **ENTÃO** a coluna "Alunos" do plano "Treino Livre" deverá exibir 1 aluno, o ranking deverá exibir a mensalidade de R$ 52,00 e a receita estimada deverá ser maior que zero |
 
 | **Critérios de aceitação** |
 | :--- |
@@ -48,7 +48,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/a5ed20f9-d1e4-4e37-90ce-9941e6799792)      |
 
 ---
 
@@ -65,9 +65,9 @@
 | **Passos** |
 | :--- |
 | **DADO** que estamos na tela de planos |
-| **E** informamos "treino" no campo "Nome do plano" |
+| **E** informamos "plano" no campo "Nome do plano" |
 | **QUANDO** clicarmos no botão "Buscar" |
-| **ENTÃO** a listagem deverá exibir apenas os planos que contêm "Treino" no nome |
+| **ENTÃO** a listagem deverá exibir apenas os planos que contêm "Plano" no nome |
 
 | **Critérios de aceitação** |
 | :--- |
@@ -75,7 +75,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/2f7b2993-8c8c-4cd8-9c40-6fa55c8cbff4)      |
 
 ---
 
@@ -102,7 +102,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/ec3ca053-5d62-438d-aa52-034d12e49b9a)      |
 
 ---
 
@@ -129,7 +129,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/fa85a065-f8b6-45aa-989b-d65a05e2eb66)      |
 
 ---
 
@@ -157,7 +157,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/1a785e1d-5f84-4b11-9c13-50be1961a7f4)      |
 
 ---
 
@@ -185,7 +185,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/eefb8181-d14f-4432-9e98-512757143e14)      |
 
 ---
 
@@ -212,7 +212,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/5491b725-464d-49bb-b928-edcbf1a40056)      |
 
 ---
 
@@ -239,7 +239,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/9f76f60c-600d-4c55-b9ae-8eb8069889e9)      |
 
 ---
 
@@ -265,7 +265,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/96013002-d0e4-4057-8dc1-383ef6437707)      |
 
 ---
 
@@ -292,4 +292,4 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]()      |
+| [Vídeo](https://jam.dev/c/10a1fc37-182b-4eac-9caf-2300fbd8aa54)      |

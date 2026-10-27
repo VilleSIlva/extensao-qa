@@ -505,7 +505,7 @@
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-014 | Na tela de planos, a coluna "Alunos" exibe 0 para todos os planos e o indicador "Receita Estimada" exibe R$ 0,00, embora o indicador "Alunos em Planos" mostre 3 e o ranking mostre o plano "Treino Livre" com 2 alunos. No ranking, a mensalidade do "Treino Livre" é exibida como R$ 0,00, embora o plano custe R$ 52,00. |
+| BUG-014 | Na tela de planos, a coluna "Alunos" exibe 0 para todos os planos e o indicador "Receita Estimada" exibe R$ 0,00, embora o indicador "Alunos em Planos" mostre 2 e o ranking mostre o plano "Treino Livre" com 1 aluno. No ranking, a mensalidade do "Treino Livre" é exibida como R$ 0,00, embora o plano custe R$ 52,00. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -520,7 +520,7 @@
 
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| A coluna "Alunos", o ranking e a receita estimada devem refletir as matrículas ativas (ex.: Treino Livre com 2 alunos e mensalidade R$ 52,00). | A coluna "Alunos" exibe 0, a receita estimada exibe R$ 0,00 e a mensalidade no ranking exibe R$ 0,00. |
+| A coluna "Alunos", o ranking e a receita estimada devem refletir as matrículas ativas (ex.: Treino Livre com 1 aluno e mensalidade R$ 52,00). | A coluna "Alunos" exibe 0, a receita estimada exibe R$ 0,00 e a mensalidade no ranking exibe R$ 0,00. |
 
 | **Ambiente** |
 | ------------------------ |
@@ -535,7 +535,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/a5ed20f9-d1e4-4e37-90ce-9941e6799792) |
 
 ---
 
@@ -573,7 +573,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/ec3ca053-5d62-438d-aa52-034d12e49b9a) |
 
 ---
 
@@ -612,7 +612,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/fa85a065-f8b6-45aa-989b-d65a05e2eb66) |
 
 ---
 
@@ -651,7 +651,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/1a785e1d-5f84-4b11-9c13-50be1961a7f4) |
 
 ---
 
@@ -690,7 +690,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/9f76f60c-600d-4c55-b9ae-8eb8069889e9) |
 
 ---
 
@@ -728,7 +728,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/96013002-d0e4-4057-8dc1-383ef6437707) |
 
 ---
 
