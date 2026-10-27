@@ -174,14 +174,14 @@
 | **Passos** |
 | :--- |
 | **DADO** que estamos na tela "Cadastrar Matrícula" |
-| **E** selecionamos o cliente, a modalidade "Treino Livre" e o tipo de pagamento "Pix" |
-| **E** informamos o dia de vencimento e a observação "Teste Ville Nunes" |
-| **QUANDO** clicarmos no botão "Salvar" e confirmarmos a quantidade de parcelas em "Escolher" |
-| **ENTÃO** o sistema deverá exibir a mensagem "Matrícula salva!" e a matrícula deverá constar na listagem com status "ATIVO" |
+| **E** selecionamos o cliente, a modalidade e o tipo de pagamento |
+| **E** informamos o dia de vencimento (somente o dia, ex.: 10) |
+| **QUANDO** clicarmos no botão "Salvar", confirmarmos a quantidade de parcelas em "Escolher" e confirmarmos a mensagem "Matrícula salva! Deseja pagar a primeira parcela agora?" |
+| **ENTÃO** o sistema deverá exibir as parcelas da matrícula e a conta a receber da primeira parcela deverá constar em "Contas a Receber" |
 
 | **Critérios de aceitação** |
 | :--- |
-| O sistema deve cadastrar a matrícula e exibi-la na listagem. |
+| O sistema deve cadastrar a matrícula e gerar as contas a receber das parcelas. |
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
@@ -286,7 +286,7 @@
 | **E** clicamos no botão "Cancelar" (X) de uma matrícula ativa |
 | **E** informamos o motivo do cancelamento e clicamos em "Cancelar Matrícula" |
 | **QUANDO** confirmarmos a mensagem "Deseja cancelar essa matrícula?" |
-| **ENTÃO** a matrícula deverá constar com status "CANCELADO" na listagem |
+| **ENTÃO** a matrícula deverá ser cancelada e deixar de constar entre as matrículas ativas |
 
 | **Critérios de aceitação** |
 | :--- |

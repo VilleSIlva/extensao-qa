@@ -890,7 +890,7 @@
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-024 | Após tentar salvar a matrícula sem tipo de pagamento, a mensagem "Selecione o Tipo de Pagamento" é exibida abaixo do campo e permanece na tela mesmo depois que o tipo de pagamento é selecionado e a matrícula é salva. |
+| BUG-024 | Após tentar salvar a matrícula sem tipo de pagamento, a mensagem "Selecione o Tipo de Pagamento" é exibida abaixo do campo e permanece na tela mesmo depois que o tipo de pagamento é selecionado. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -901,7 +901,7 @@
 | 1. Acessar a tela "Cadastrar Matrícula" do SIFIT. |
 | 2. Selecionar cliente e modalidade, sem tipo de pagamento. |
 | 3. Clicar no botão "Salvar". |
-| 4. Selecionar o tipo de pagamento "Pix". |
+| 4. Selecionar um tipo de pagamento (ex.: "Cheque"). |
 | 5. Verificar a mensagem abaixo do campo "Tipo Pagamento". |
 
 | **Comportamento Esperado** | **Comportamento Obtido** |
