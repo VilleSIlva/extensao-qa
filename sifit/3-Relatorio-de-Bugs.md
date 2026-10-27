@@ -767,7 +767,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo C06-CT08](https://jam.dev/c/561a6194-6092-4ce0-a67f-71e0da5a84ca) · [Vídeo C06-CT10](https://jam.dev/c/102e4688-1b02-4882-9547-e5ad043f5d93) |
 
 ---
 
@@ -806,7 +806,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/7058b67e-1662-4ab3-9b6c-5bdb8f2c041c) |
 
 ---
 
@@ -844,7 +844,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/de75bafc-86f6-45f1-9e87-83269324988b) |
 
 ---
 
@@ -867,7 +867,7 @@
 
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| O sistema deve excluir a matrícula e exibir mensagem de sucesso. | O sistema exibe "Erro no servidor - Erro interno inesperado.", mas a matrícula é excluída. |
+| O sistema deve excluir a matrícula e exibir mensagem de sucesso. | O sistema exibe "Erro no servidor - Erro interno inesperado." e a listagem não é atualizada (a matrícula continua aparecendo até a página ser recarregada), embora a exclusão seja efetivada. |
 
 | **Ambiente** |
 | ------------------------ |
@@ -882,7 +882,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/21646323-7507-4ece-a3b1-16ab9def23ef) |
 
 ---
 
@@ -921,7 +921,7 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/5a82af04-828e-49bb-9853-4e01baa8aa28) |
 
 ---
 
@@ -959,30 +959,31 @@
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/d1626ff1-a6d5-43c0-a063-d9127141bb66) |
 
 ---
 
-### 🐞 **Bug 26: Matrícula cadastrada não gera conta a receber**
+### 🐞 **Bug 26: Campo "Dia Vencimento" aceita data e exibe erro de SQL ao salvar a matrícula**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-026 | Após cadastrar matrículas no plano "Treino Livre" (R$ 52,00) para os clientes Jerome Lionel (matrícula 240, com 1 parcela confirmada em "Escolher") e Steven Kaiki (matrícula 239), nenhuma conta a receber de R$ 52,00 foi gerada, mesmo pesquisando o período de 2020 a 2030 por vencimento e por recebimento. |
+| BUG-026 | O campo "Dia Vencimento" do cadastro de matrícula aceita qualquer texto, como uma data completa ("26/11/2026"). Ao salvar, o sistema exibe a janela "Não foi possível concluir" com a mensagem do banco de dados "SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'dia_venc_pag' at row 1", sem orientar que o campo deve conter apenas o dia (1 a 31) e expondo detalhes internos do banco. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
-| Alta | Alta | Aberto |
+| Média | Média | Aberto |
 
 | **Passo a passo para simular o bug** |
 | -------------------------------------------------------------- |
-| 1. Cadastrar uma matrícula no plano "Treino Livre" para um cliente sem matrícula ativa. |
-| 2. Confirmar a quantidade de parcelas na janela "Quantidade Parcelas" (botão "Escolher"). |
-| 3. Acessar a tela de contas a receber. |
-| 4. Pesquisar o nome do cliente com período de 01/01/2020 a 31/12/2030. |
+| 1. Acessar a tela "Cadastrar Matrícula" do SIFIT. |
+| 2. Selecionar um cliente sem matrícula ativa, a modalidade "Treino Livre" e o tipo de pagamento "Pix". |
+| 3. Informar "26/11/2026" no campo "Dia Vencimento". |
+| 4. Clicar no botão "Salvar". |
+| 5. Verificar a mensagem exibida. |
 
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Deve existir uma conta a receber de R$ 52,00 referente à parcela da matrícula. | Nenhuma conta a receber referente à matrícula é exibida. |
+| O campo deve aceitar apenas números de 1 a 31 e o sistema deve informar o formato correto, sem expor erros do banco de dados. | O sistema exibe "Não foi possível concluir" com a instrução SQL que falhou. |
 
 | **Ambiente** |
 | ------------------------ |
@@ -993,11 +994,11 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
-| Contas a Receber / Matrículas | C07-CT12: Geração de conta a receber a partir da matrícula |
+| Matrículas / Cadastro de matrícula | C06-CT07: Cadastro de matrícula com dados válidos |
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
-| [Vídeo]() |
+| [Vídeo](https://jam.dev/c/f6c8984a-4de5-4654-86d1-0b7e676b04bc) |
 
 ---
 

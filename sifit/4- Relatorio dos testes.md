@@ -15,7 +15,7 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 191                     | 114            | 77             | 76               |
+| 191                     | 115            | 76             | 76               |
 
 ---
 
@@ -28,8 +28,8 @@
 | RF03      | Dashboard                 | 4              | 1              | 3                | BUG-002, BUG-005, BUG-006 |
 | RF04      | Gestão de Clientes        | 11             | 5              | 7                | BUG-007, BUG-008, BUG-009, BUG-010, BUG-011, BUG-012, BUG-013 |
 | RF05      | Gestão de Planos          | 11             | 5              | 6                | BUG-014, BUG-015, BUG-016, BUG-017, BUG-018, BUG-019 |
-| RF06      | Gestão de Matrículas      | 12             | 6              | 6                | BUG-020, BUG-021, BUG-022, BUG-023, BUG-024, BUG-025 |
-| RF07      | Contas a Receber          | 12             | 7              | 5                | BUG-026, BUG-027, BUG-028, BUG-029, BUG-030 |
+| RF06      | Gestão de Matrículas      | 12             | 6              | 7                | BUG-020, BUG-021, BUG-022, BUG-023, BUG-024, BUG-025, BUG-026 |
+| RF07      | Contas a Receber          | 12             | 8              | 4                | BUG-027, BUG-028, BUG-029, BUG-030 |
 | RF08      | Gestão de Fornecedores    | 9              | 6              | 3                | BUG-031, BUG-032, BUG-033 |
 | RF09      | Check-in e Presenças      | 11             | 4              | 6                | BUG-034, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039 |
 | RF10      | Avaliações                | 11             | 7              | 4                | BUG-040, BUG-041, BUG-042, BUG-043 |
@@ -73,7 +73,7 @@
 | BUG-023 | Erro no servidor ao excluir matrícula, embora a exclusão seja efetivada | Média    | Aberto |
 | BUG-024 | Mensagem de validação permanece após selecionar o tipo de pagamento   | Baixa      | Aberto |
 | BUG-025 | Ausência de mensagem quando a busca não encontra matrículas           | Baixa      | Aberto |
-| BUG-026 | Matrícula cadastrada não gera conta a receber                         | Alta       | Aberto |
+| BUG-026 | Campo "Dia Vencimento" aceita data e exibe erro de SQL ao salvar a matrícula | Média | Aberto |
 | BUG-027 | Indicador "Contas Atrasadas" diverge do filtro de contas vencidas    | Média      | Aberto |
 | BUG-028 | Recebimento é registrado sem tipo de pagamento                        | Média      | Aberto |
 | BUG-029 | Recebimento aceita valor maior que o valor a receber sem alerta       | Baixa      | Aberto |
@@ -131,14 +131,14 @@
 
 **Casos por status:**
 
-* ✅ Passaram: 114
-* ❌ Falharam: 77
+* ✅ Passaram: 115
+* ❌ Falharam: 76
 
 **Severidade dos bugs:**
 
 * 🟥 Crítica: 2
-* 🟧 Alta: 14
-* 🟨 Média: 34
+* 🟧 Alta: 13
+* 🟨 Média: 35
 * 🟩 Baixa: 26
 
 ---
@@ -183,7 +183,7 @@ No módulo de **Planos**, o cadastro, a edição e a exclusão funcionam, mas **
 
 No módulo de **Matrículas**, o cadastro, a busca e o cancelamento funcionam, mas o **desconto não é aplicado ao valor total** (BUG-020), o que pode gerar cobranças incorretas, e a **paginação esconde parte das matrículas** (BUG-022). A exclusão é efetivada, mas o sistema informa erro ao usuário (BUG-023).
 
-No módulo de **Contas a Receber**, a busca, os filtros, o cadastro manual, o recebimento e a exclusão funcionam, e os indicadores do mês são atualizados corretamente. Porém, **as matrículas cadastradas não geraram contas a receber** (BUG-026), o que compromete a cobrança dos alunos, e **o recebimento pode ser registrado sem tipo de pagamento** (BUG-028), prejudicando o fechamento de caixa.
+No módulo de **Contas a Receber**, a busca, os filtros, o cadastro manual, o recebimento e a exclusão funcionam, e os indicadores do mês são atualizados corretamente. As matrículas geram as contas a receber das parcelas quando o cadastro é concluído na tela "Cadastrar Conta a Receber". Porém, **o recebimento pode ser registrado sem tipo de pagamento** (BUG-028), prejudicando o fechamento de caixa.
 
 No módulo de **Fornecedores**, a listagem, a busca por nome e a visualização funcionam, mas, assim como em Clientes, **não é possível cadastrar nem alterar fornecedores** (BUG-032 e BUG-033), e a alteração expõe mensagens do banco de dados.
 
@@ -231,7 +231,6 @@ Com base na análise das requisições feitas pelo navegador (DevTools), foram l
 * **BUG-020:** o campo "Desconto" exibido na visualização recebe o valor da parcela, o que sugere que o campo errado é gravado ou lido, e o valor total não é recalculado na tela de cadastro.
 * **BUG-021 e BUG-023:** a API retorna o motivo correto ("Já existe matrícula ativa") ou realiza a operação, mas a tela exibe uma mensagem genérica de erro, indicando falha no tratamento das respostas da API.
 * **BUG-022:** a quantidade de páginas não é calculada a partir do total de matrículas, impedindo a navegação além da primeira página.
-* **BUG-026:** a matrícula é gravada (a API retorna o código da matrícula), mas nenhuma conta a receber é criada; a geração das parcelas pode depender de uma etapa posterior não concluída ou estar falhando de forma silenciosa.
 * **BUG-028 e BUG-029:** o formulário de recebimento não valida os campos antes do envio e o back-end aceita os dados sem validação.
 * **BUG-032 e BUG-033:** a atualização do fornecedor não envia o campo "tipo_pessoa" (Física/Jurídica), que é obrigatório no banco de dados; o mesmo padrão de erro 500 no cadastro e na alteração ocorre em Clientes (BUG-007 e BUG-012), o que sugere uma falha comum nas rotas de gravação de cadastros.
 * **BUG-034 a BUG-037:** o check-in é gravado em uma tabela própria (a API retorna o código do check-in), mas não gera o registro de presença nem atualiza o status; o horário é armazenado em UTC e exibido sem conversão para o fuso de Brasília; a liberação do check-in não consulta a situação da matrícula do cliente.

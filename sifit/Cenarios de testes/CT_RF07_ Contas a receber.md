@@ -309,9 +309,9 @@
 
 | **Passos** |
 | :--- |
-| **DADO** que cadastramos uma matrícula no plano "Treino Livre" (R$ 52,00) e confirmamos 1 parcela em "Escolher" |
+| **DADO** que cadastramos uma matrícula, confirmamos as parcelas em "Escolher" e salvamos a tela "Cadastrar Conta a Receber" exibida em seguida |
 | **QUANDO** acessarmos a tela de contas a receber e pesquisarmos o cliente em um período amplo |
-| **ENTÃO** deverá existir uma conta a receber de R$ 52,00 referente à matrícula |
+| **ENTÃO** deverá existir a conta a receber da primeira parcela da matrícula, com o valor do plano |
 
 | **Critérios de aceitação** |
 | :--- |
