@@ -1,13 +1,7 @@
 # ✅ **Relatório Final de Execução de Testes - SIFIT**
 
-**Sistema testado:** SIFIT - Sistema para Academias (ambiente de homologação)
-**Responsável:** Ville Nunes Figueiredo da Silva
+**Sistema testado:** SIFIT - Sistema para Academias
 **Data de execução:** 13/10/2026 a 25/10/2026
-**Ambiente:** Homologação
-
-* Sistema operacional: Windows 11 / Linux
-* Navegador: Google Chrome 155.0.8059.84
-* URL: [https://sifitalfa.centrion.com.br](https://sifitalfa.centrion.com.br)
 
 ---
 

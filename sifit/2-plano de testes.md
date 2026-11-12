@@ -3,11 +3,8 @@
 ### 📌 1. **Identificação**
 
 * **Nome do Projeto**: SIFIT - Sistema de Gestão de Academias
-* **Versão Avaliada**: Ambiente de homologação (alfa)
-* **Ambiente de Testes**: [https://sifitalfa.centrion.com.br](https://sifitalfa.centrion.com.br)
 * **Tipo de Teste**: Teste Funcional Manual
 * **Data do Documento**: 25/10/2026
-* **Responsável**: Ville Nunes Figueiredo da Silva
 
 ---
 

@@ -2,8 +2,6 @@
 
 **Software:** Sifit
 
-**QA responsável:**  Ville Nunes Figueiredo da Silva
-
 **Data:** 13.10.26
 
 ---
@@ -28,13 +26,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que os campos de nome de usuário e senha são obrigatórios, orientando o usuário a preenchê-los. | O sistema exibe a mensagem "O nome de usuário e senha não correspondem", utilizada também para tentativas de login com credenciais inválidas. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Windows 11. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -67,13 +58,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A quantidade de alunos em risco deve ser a mesma em todas as telas. | As telas exibem 3, 4 e 0 alunos em risco. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Página Inicial / Dashboard / Inteligência | C02-CT02: Radar de evasão / C03-CT03: Indicador de alunos em risco do Dashboard |
@@ -104,13 +88,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | As duas telas devem exibir a mesma quantidade de clientes ausentes. | A Página Inicial exibe 4 e a tela de Clientes exibe 0. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -143,13 +120,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A janela deve listar as 3 desistências do período. | A janela informa que não há desistências, mas exibe o total de 3. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Página Inicial / Desistências | C02-CT05: Desistências no período |
@@ -180,13 +150,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O título e a navegação devem exibir "Dashboard". | O título e a navegação exibem "Despesas Fixas". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Dashboard | C03-CT01: Acesso ao Dashboard |
@@ -216,13 +179,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Os títulos devem estar legíveis, com contraste adequado em relação ao fundo. | Os títulos ficam praticamente invisíveis. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -256,13 +212,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve cadastrar o cliente, exibir mensagem de sucesso e apresentá-lo na listagem. | O sistema exibe o modal "Erro - Erro ao criar cliente." e o cliente não é cadastrado. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Clientes / Cadastro de cliente | C04-CT08: Cadastro de cliente com dados válidos |
@@ -293,13 +242,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve exibir o cliente que possui o código informado. | A tela de clientes fica totalmente em branco após clicar em "Buscar", embora o cliente 408 esteja cadastrado e ativo. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -332,13 +274,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A paginação deve exibir somente a quantidade de páginas correspondente aos registros filtrados. | A paginação exibe 3 páginas e as páginas 2 e 3 são apresentadas vazias. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Clientes / Paginação | C04-CT05: Paginação da listagem filtrada |
@@ -370,13 +305,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A primeira página deve exibir no máximo 50 clientes. | A primeira página exibe todos os clientes cadastrados (125 no momento da gravação). |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Clientes / Paginação | C04-CT06: Quantidade de registros por página |
@@ -407,13 +335,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve exibir uma mensagem como "Nenhum cliente encontrado". | O sistema exibe somente o cabeçalho da tabela, sem registros e sem mensagem. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -447,13 +368,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve salvar as alterações, exibir mensagem de sucesso e apresentar os dados atualizados na listagem. | O sistema exibe o modal "Erro - Erro ao criar cliente." e o cliente permanece com os dados anteriores. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Clientes / Alteração e inativação de cliente | C04-CT10: Alteração dos dados do cliente |
@@ -483,13 +397,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que o cliente não foi encontrado e redirecionar para a listagem de clientes. | O sistema exibe "Erro no servidor - Erro interno inesperado." (erro 500). |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -522,13 +429,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A coluna "Alunos", o ranking e a receita estimada devem refletir as matrículas ativas (ex.: Treino Livre com 1 aluno e mensalidade R$ 52,00). | A coluna "Alunos" exibe 0, a receita estimada exibe R$ 0,00 e a mensalidade no ranking exibe R$ 0,00. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Planos / Listagem e indicadores | C05-CT02: Exibição da quantidade de alunos e da receita dos planos |
@@ -559,13 +459,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve exibir somente o plano de código #1. | O sistema exibe os planos #1, #11, #16, #41 e #51. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -599,13 +492,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que o campo "Grupo" é obrigatório, sem erro interno e sem expor detalhes do banco de dados. | O sistema exibe "Erro ao salvar plano" e a API retorna erro 500 com a instrução SQL que falhou. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Planos / Cadastro de plano | C05-CT05: Cadastro de plano sem grupo |
@@ -637,13 +523,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve impedir o cadastro e informar que a quantidade de parcelas deve ser maior que zero. | O plano é cadastrado com "-3" parcelas. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -677,13 +556,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O plano deve constar com status "INATIVO". | O plano permanece com status "ATIVO". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Planos / Alteração de plano | C05-CT09: Inativação do plano |
@@ -714,13 +586,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Somente planos ativos devem ser exibidos no campo "Modalidade". | Os planos inativos "AVA" e "Teste Final" são exibidos como opção. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -754,13 +619,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O valor total deve ser R$ 42,00 e a visualização deve exibir desconto de R$ 10,00. | O valor total permanece R$ 52,00 e a visualização exibe "Desconto 52,00". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Matrículas / Cadastro e visualização | C06-CT08: Cadastro de matrícula com desconto / C06-CT10: Visualização dos dados da matrícula |
@@ -793,13 +651,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que o cliente já possui matrícula ativa. | O sistema exibe a mensagem "Erro ao Cadastrar com Assinatura". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Matrículas / Cadastro de matrícula | C06-CT09: Cadastro de matrícula para cliente com matrícula ativa |
@@ -831,13 +682,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A paginação deve exibir 2 páginas e permitir acessar as 84 matrículas. | A paginação exibe somente a página 1 e o botão "Próxima" fica desabilitado. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Matrículas / Paginação | C06-CT04: Paginação da listagem de matrículas |
@@ -868,13 +712,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve excluir a matrícula e exibir mensagem de sucesso. | O sistema exibe "Erro no servidor - Erro interno inesperado." e a listagem não é atualizada (a matrícula continua aparecendo até a página ser recarregada), embora a exclusão seja efetivada. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -908,13 +745,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A mensagem de validação deve desaparecer quando o campo for preenchido. | A mensagem "Selecione o Tipo de Pagamento" permanece exibida. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Matrículas / Cadastro de matrícula | C06-CT06: Cadastro de matrícula sem tipo de pagamento |
@@ -945,13 +775,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve exibir uma mensagem como "Nenhuma matrícula encontrada". | O sistema exibe somente o cabeçalho da tabela, sem registros e sem mensagem. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -985,13 +808,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O campo deve aceitar apenas números de 1 a 31 e o sistema deve informar o formato correto, sem expor erros do banco de dados. | O sistema exibe "Não foi possível concluir" com a instrução SQL que falhou. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Matrículas / Cadastro de matrícula | C06-CT07: Cadastro de matrícula com dados válidos |
@@ -1022,13 +838,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A listagem deve exibir as 2 contas atrasadas indicadas no indicador. | A listagem não exibe nenhuma conta. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1062,13 +871,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve exigir a seleção do tipo de pagamento antes de registrar o recebimento. | O recebimento é registrado com o tipo de pagamento vazio. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Contas a Receber / Recebimento | C07-CT09: Recebimento de conta sem tipo de pagamento |
@@ -1101,13 +903,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve alertar sobre a divergência ou impedir o recebimento acima do valor da conta. | O recebimento é registrado com R$ 100,00 sem nenhum alerta. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Contas a Receber / Recebimento | C07-CT10: Recebimento com valor maior que o valor a receber |
@@ -1139,13 +934,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve exibir uma mensagem como "Nenhuma conta encontrada". | O sistema exibe somente o cabeçalho da tabela, sem registros e sem mensagem. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Contas a Receber / Busca | C07-CT03: Busca de conta com nome inexistente |
@@ -1176,13 +964,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A listagem não deve exibir fornecedores e o sistema deve informar que nenhum fornecedor foi encontrado. | O sistema exibe "Erro no servidor" e a listagem continua com todos os 8 fornecedores. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1216,13 +997,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve cadastrar o fornecedor e exibir mensagem de sucesso. | O sistema exibe "Erro ao salvar fornecedor." e o fornecedor não é cadastrado. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Fornecedores / Cadastro | C08-CT06: Cadastro de fornecedor com dados válidos |
@@ -1255,13 +1029,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve salvar a alteração e exibir o nome atualizado na listagem. | O sistema exibe "Erro no servidor" e o fornecedor permanece com o nome "Jao". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Fornecedores / Alteração | C08-CT08: Alteração dos dados do fornecedor |
@@ -1292,13 +1059,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A tela de Presenças deve listar os check-ins realizados no dia. | A tela exibe "Nenhuma presença encontrada" e total 0. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1331,13 +1091,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O cliente deve constar como presente, o indicador deve ser atualizado e uma nova tentativa deve informar que já existe check-in aberto. | O status permanece "Pendente", "Presentes agora" fica em 0 e a nova tentativa não exibe nenhuma mensagem. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Check-in / Listagem | C09-CT07: Status do check-in e indicador "Presentes agora" / C09-CT08: Check-in duplicado |
@@ -1367,13 +1120,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A coluna "Entrada" deve exibir o horário local do check-in (ex.: 18:11). | A coluna "Entrada" exibe 21:11. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1406,13 +1152,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que a cliente não possui matrícula ativa e bloquear o check-in. | O sistema libera e registra o check-in. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Check-in / Regras de acesso | C09-CT04: Check-in de cliente sem matrícula ativa |
@@ -1444,13 +1183,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve solicitar o código quando o campo estiver vazio e confirmar o check-in realizado. | Nenhuma mensagem é exibida nos dois casos. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Check-in / Entrada rápida e manual | C09-CT06: Entrada rápida sem código / C09-CT03: Check-in manual de cliente com matrícula ativa |
@@ -1480,13 +1212,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Os indicadores devem ser calculados a partir dos check-ins realizados (ex.: taxa de 25%). | A comparação permanece "18% vs ontem" e a taxa exibe 100%. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1520,13 +1245,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve salvar a avaliação e alterar o status para "REALIZADO". | O sistema exibe "Erro ao salvar avaliação" e a avaliação permanece pendente. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Avaliações / Fazer avaliação | C10-CT10: Registro da avaliação realizada |
@@ -1558,13 +1276,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve salvar a nova data e hora e confirmar a alteração. | Nada acontece e a avaliação mantém a data e a hora originais. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1598,13 +1309,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que a hora é inválida antes de enviar o cadastro. | O sistema exibe "Erro ao cadastrar Avaliação." (erro 500). |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Avaliações / Cadastro | C10-CT06: Cadastro de avaliação com hora inválida |
@@ -1636,13 +1340,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O IMC deve ser exibido como "26,12". | O IMC é exibido como "26.122448979591837". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Avaliações / Fazer avaliação | C10-CT09: Cálculo do IMC |
@@ -1673,13 +1370,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve salvar a turma e exibir mensagem de sucesso. | O sistema exibe "Erro ao salvar turma." e nenhuma alteração é salva. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1713,13 +1403,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que a hora final deve ser maior que a hora inicial. | A turma é cadastrada com o horário "11:00:00 - 10:00:00". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Turmas / Cadastro | C11-CT09: Cadastro de turma com hora final anterior à inicial |
@@ -1749,13 +1432,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar quantas aulas foram geradas ou o motivo de nenhuma aula ter sido gerada. | Nenhuma mensagem é exibida e a tela continua com "Nenhuma aula encontrada no periodo.". |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1789,13 +1465,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O caixa deve ser fechado com os totais conferidos. | Nada acontece e o caixa permanece aberto. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Caixas / Fechamento | C12-CT10: Fechamento de caixa com conferência das contas |
@@ -1826,13 +1495,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve exigir a busca e a conferência das contas antes do fechamento. | O caixa é fechado com os totais zerados. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1865,13 +1527,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que já existe um caixa aberto para o local. | Um segundo caixa é aberto no mesmo local. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Caixas / Abertura | C12-CT08: Abertura de caixa duplicado no mesmo local |
@@ -1903,13 +1558,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que o local de contas é obrigatório. | O sistema exibe "Erro no servidor". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Caixas / Abertura | C12-CT06: Abertura de caixa sem local |
@@ -1939,13 +1587,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | "Caixas Abertos" deve aumentar em 1 e "Caixas Fechados" deve permanecer igual. | "Caixas Fechados" diminui em 1 a cada caixa aberto. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -1978,13 +1619,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A listagem inicial deve exibir somente os caixas do período exibido nos filtros. | A listagem inicial exibe todos os caixas, fora do período. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Caixas / Listagem | C12-CT02: Listagem inicial conforme o período exibido |
@@ -2016,13 +1650,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve permitir registrar o pagamento e alterar o status para "PAGO". | Não há nenhuma opção para registrar o pagamento. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Contas a Pagar / Pagamento | C13-CT08: Registro do pagamento da conta |
@@ -2052,13 +1679,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Os indicadores devem exibir a soma dos valores das contas pendentes. | Os indicadores exibem 0. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2091,13 +1711,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que fornecedor e valor são obrigatórios. | O sistema exibe "Erro ao salvar conta a pagar" (erro 500). |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Contas a Pagar / Cadastro | C13-CT05: Cadastro de conta a pagar com campos obrigatórios vazios |
@@ -2129,13 +1742,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve excluir a conta e exibir mensagem de sucesso. | A conta é excluída, mas o sistema exibe "Erro no servidor". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Contas a Pagar / Exclusão | C13-CT09: Exclusão de conta a pagar |
@@ -2165,13 +1771,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A visualização deve exibir o código da conta, a categoria e o tipo pelo nome e as datas no formato dd/mm/aaaa. | São exibidos códigos internos, campo de código vazio e data no formato aaaa-mm-dd. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2205,13 +1804,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve aceitar somente valores numéricos maiores que zero. | A despesa é cadastrada com valor negativo. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Despesas Fixas / Cadastro | C13-CT13: Cadastro de despesa fixa com valor negativo |
@@ -2244,13 +1836,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve salvar os treinos e permitir abrir a ficha cadastrada. | O sistema exibe "Erro no servidor" ao salvar e ao visualizar a ficha. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Fichas de Treino / Montagem e visualização | C14-CT05: Montagem e salvamento dos treinos da ficha / C14-CT06: Visualização da ficha de treino |
@@ -2281,13 +1866,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar "Escolha o objetivo do treino." e orientar o cadastro de objetivos. | O sistema exibe "Erro ao salvar Ficha.". |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2320,13 +1898,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A API deve retornar apenas o resultado da operação, sem expor comandos SQL. | A resposta da API contém o comando SQL executado. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Fichas de Treino / Exclusão | C14-CT07: Exclusão de ficha de treino |
@@ -2357,13 +1928,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que o exercício já está cadastrado no grupo. | O exercício é cadastrado em duplicidade. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2397,13 +1961,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que já existe um lead com o mesmo e-mail ou telefone. | O lead é cadastrado em duplicidade. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Prospecção / Cadastro de lead | C15-CT10: Cadastro de lead duplicado |
@@ -2434,13 +1991,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve cadastrar o colaborador com os valores exibidos ou informar os campos obrigatórios. | O sistema exibe "Erro no servidor" (erro 500). |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2473,13 +2023,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que nenhum colaborador foi encontrado. | A listagem exibe uma linha vazia com "/". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Colaboradores / Busca | C16-CT03: Busca de colaborador com código inexistente |
@@ -2510,13 +2053,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A API deve retornar apenas o resultado da operação, sem expor comandos SQL. | A resposta da API contém o comando SQL executado. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2549,13 +2085,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve permitir alterar e excluir funções. | Os campos são somente leitura e não há opção de exclusão. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Funções / Alteração e exclusão | C16-CT16: Alteração e exclusão de função |
@@ -2586,13 +2115,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que a função já existe. | A função é cadastrada em duplicidade. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2625,13 +2147,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve cadastrar o produto do tipo Pontuação com 100 pontos. | O sistema exibe "Erro ao salvar produto" e o produto não é cadastrado. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Produtos / Cadastro | C17-CT07: Cadastro de produto do tipo Pontuação |
@@ -2662,13 +2177,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que nome e preço são obrigatórios, sem expor erros do banco de dados. | O sistema exibe "Erro ao salvar produto" e a API retorna o erro do banco. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2701,13 +2209,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que o preço deve ser maior que zero. | O produto é cadastrado com preço negativo. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Produtos / Cadastro | C17-CT05: Cadastro de produto com preço negativo |
@@ -2736,13 +2237,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Os valores devem ser exibidos como "R$ 1.550,00", "R$ 7.000,99" e "R$ 49,90". | Os valores são exibidos como "R$ 1550", "R$ 7000.99" e "R$ 49.9". |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2775,13 +2269,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A anamnese deve constar na listagem e os indicadores devem ser atualizados. | A listagem exibe "Nenhuma ficha encontrada" e os indicadores permanecem em 0. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Fichas de Anamnese / Listagem | C18-CT07: Listagem das anamneses aplicadas |
@@ -2812,13 +2299,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A pergunta do modelo deve ser exibida para resposta antes da revisão. | O assistente pula para "Revisar e Finalizar" sem exibir a pergunta. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2851,13 +2331,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve impedir o avanço e informar que é necessário selecionar um aluno. | O assistente avança e a finalização exibe "Erro no servidor". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Fichas de Anamnese / Aplicação | C18-CT02: Avançar sem selecionar aluno |
@@ -2887,13 +2360,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O texto deve exibir "Escolha o modelo de anamnese a aplicar para Steven Kaiki.". | O texto é exibido sem o nome do aluno. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -2926,13 +2392,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve desconsiderar os espaços das extremidades e autenticar o usuário. | O login é recusado e o usuário permanece na tela de login. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Login / Autenticação de usuário | C01-CT04: Login com espaços extras nas credenciais válidas |
@@ -2964,13 +2423,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A sessão deve continuar ativa com "Manter conectado", e o endereço /dashboard deve exigir login quando não há sessão válida. | O sistema solicita o login novamente ao reabrir o SIFIT, e o endereço /dashboard é exibido sem sessão válida. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Login / Sessão / Controle de acesso | C01-CT05: Persistência da sessão com "Manter conectado" / C01-CT06: Acesso ao Dashboard sem sessão válida |
@@ -2999,13 +2451,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve abrir a tela de recuperação de senha. | Nenhuma ação é executada e o usuário permanece na tela de login. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -3038,13 +2483,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | A quantidade do card deve ser igual à quantidade de avaliações pendentes da listagem. | O card exibe 0 e a listagem filtrada exibe 4 avaliações pendentes (#79, #69, #67 e #52). |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Página Inicial / Avaliações | C02-CT08: Card de avaliações pendentes |
@@ -3075,13 +2513,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve impedir a seleção ou informar que o período é inválido. | O período invertido é aceito sem aviso e os cards exibem dados (ex.: 2 matrículas no período). |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -3114,13 +2545,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O rodapé deve indicar a faixa real de alunos exibidos, e a exportação deve gerar o relatório ou informar o resultado. | O rodapé exibe "3 a 4 de 4" com quatro linhas na tabela, e a exportação não apresenta arquivo nem mensagem. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Página Inicial / Radar de Evasão | C02-CT02: Radar de evasão |
@@ -3152,13 +2576,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve rejeitar a data futura e informar que a data de nascimento é inválida. | O cliente é cadastrado e a ficha exibe a idade "-2 anos". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Clientes / Cadastro | C04-CT12: Cadastro de cliente com data de nascimento futura |
@@ -3189,13 +2606,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar que o CPF é inválido e não salvar o cadastro. | O CPF inválido é salvo sem nenhum aviso. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Clientes / Cadastro e alteração | C04-CT13: Cadastro de cliente com CPF inválido |
@@ -3225,13 +2635,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Somente clientes ativos devem ser listados. | A listagem exibe clientes com status INATIVO. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -3264,13 +2667,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Os campos sem informação devem aparecer em branco ou com "-", sem dados fictícios. | O telefone e o bairro aparecem como "null", e o card "Objetivos" exibe objetivo e progresso não cadastrados. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Clientes / Visualização | C04-CT15: Visualização da ficha de cliente recém-cadastrado |
@@ -3300,13 +2696,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Somente datas válidas no padrão DD/MM/AAAA devem ser aceitas. | A data inválida "2026/05/192" é aceita. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -3338,13 +2727,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Os indicadores devem corresponder às contas da listagem, incluindo as contas pendentes. | "Entradas" (R$ 499,50) e "Recebido no Mês" (R$ 475,00) divergem, e as contas pendentes não são consideradas em "Previsto para o Mês" e "Pendentes no Mês". |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Contas a Receber / Indicadores | C07-CT13: Indicadores do mês coerentes com a listagem |
@@ -3373,13 +2755,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O horário de pico deve ser o mesmo nas duas telas. | Página Inicial: "00h - 01h". Check-in: "Horário de maior movimento: 18h às 20h". |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -3412,13 +2787,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | A tela exibe "Erro ao salvar enquete" sem indicar o que falta. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Cadastros auxiliares / Enquetes | C20-CT03: Cadastro de Enquetes com o formulário vazio |
@@ -3449,13 +2817,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | O registro é criado (retorno 201) e a listagem passa de 4 para 5 atividades, com uma linha em branco. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
@@ -3488,13 +2849,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | O registro é criado (retorno 201) e a listagem passa de 0 para 1 objetivo, com uma linha em branco. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Cadastros auxiliares / Objetivos de Treino | C20-CT07: Cadastro de Objetivos de Treino com o formulário vazio |
@@ -3526,13 +2880,6 @@
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | O registro é criado (retorno 201) e a listagem passa de 10 para 11 tipos, com uma linha em branco. |
 
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
 | Cadastros auxiliares / Tipos de Pagamento | C20-CT08: Cadastro de Tipos de Pagamento com o formulário vazio |
@@ -3563,13 +2910,6 @@
 | **Comportamento Esperado** | **Comportamento Obtido** |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | A requisição retorna erro 500 e a tela exibe "Erro ao salvar pergunta". |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
