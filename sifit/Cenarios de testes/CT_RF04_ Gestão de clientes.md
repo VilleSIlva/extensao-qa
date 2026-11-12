@@ -296,37 +296,11 @@
 
 ---
 
-### Caso de Teste 12: Letras no campo Código da busca.
+### Caso de Teste 12: Cadastro de cliente com data de nascimento futura.
 
 | ID | Descrição |
 | :--- | :--- |
-| C04-CT12 | Verificar se o campo "Código" da busca de clientes aceita somente números. |
-
-| **Pré-condições** |
-| :--- |
-| O usuário deve estar autenticado na plataforma SIFIT. |
-
-| **Passos** |
-| :--- |
-| **DADO** que estamos na listagem de clientes |
-| **QUANDO** digitarmos "abc" no campo "Código" |
-| **ENTÃO** o campo não deverá aceitar as letras |
-
-| **Critérios de aceitação** |
-| :--- |
-| O campo "Código" deve recusar caracteres que não sejam números. |
-
-|                    **Evidência(s)**                     |
-| :-----------------------------------------------------: |
-| [Vídeo]()      |
-
----
-
-### Caso de Teste 13: Cadastro de cliente com data de nascimento futura.
-
-| ID | Descrição |
-| :--- | :--- |
-| C04-CT13 | Verificar se o sistema impede o cadastro de cliente com data de nascimento posterior à data atual. |
+| C04-CT12 | Verificar se o sistema impede o cadastro de cliente com data de nascimento posterior à data atual. |
 
 | **Pré-condições** |
 | :--- |
@@ -350,11 +324,11 @@
 
 ---
 
-### Caso de Teste 14: Cadastro de cliente com CPF inválido.
+### Caso de Teste 13: Cadastro de cliente com CPF inválido.
 
 | ID | Descrição |
 | :--- | :--- |
-| C04-CT14 | Verificar se o sistema valida o dígito verificador do CPF no cadastro e na alteração do cliente. |
+| C04-CT13 | Verificar se o sistema valida o dígito verificador do CPF no cadastro e na alteração do cliente. |
 
 | **Pré-condições** |
 | :--- |
@@ -377,11 +351,11 @@
 
 ---
 
-### Caso de Teste 15: Filtro de clientes pelo status "Ativo".
+### Caso de Teste 14: Filtro de clientes pelo status "Ativo".
 
 | ID | Descrição |
 | :--- | :--- |
-| C04-CT15 | Verificar se, com o filtro "Status" em "Ativo", somente clientes ativos são listados. |
+| C04-CT14 | Verificar se, com o filtro "Status" em "Ativo", somente clientes ativos são listados. |
 
 | **Pré-condições** |
 | :--- |
@@ -404,11 +378,11 @@
 
 ---
 
-### Caso de Teste 16: Visualização da ficha de cliente recém-cadastrado.
+### Caso de Teste 15: Visualização da ficha de cliente recém-cadastrado.
 
 | ID | Descrição |
 | :--- | :--- |
-| C04-CT16 | Verificar se a ficha do cliente exibe apenas dados reais, sem "null" ou informações fictícias. |
+| C04-CT15 | Verificar se a ficha do cliente exibe apenas dados reais, sem "null" ou informações fictícias. |
 
 | **Pré-condições** |
 | :--- |

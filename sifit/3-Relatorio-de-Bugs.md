@@ -3131,47 +3131,11 @@
 
 ---
 
-### 🐞 **Bug 83: Campo "Código" da busca de clientes aceita letras**
+### 🐞 **Bug 83: Cadastro de cliente aceita data de nascimento futura**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-083 | O campo "Código" da busca de clientes aceita e mantém letras, embora o código do cliente seja numérico. |
-
-| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
-| --------------------- | -------------------------- | ---------- |
-| Baixa | Baixa | Aberto |
-
-| **Passo a passo para simular o bug** |
-| -------------------------------------------------------------- |
-| 1. Acessar a listagem de clientes. |
-| 2. Digitar "abc" no campo "Código". |
-
-| **Comportamento Esperado** | **Comportamento Obtido** |
-| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| O campo deve aceitar somente números. | O campo aceita e mantém o texto "abc". |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
-| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
-| -------------------------- | ------------------------------------------ |
-| Clientes / Busca por código | C04-CT12: Letras no campo Código da busca |
-
-|                    **Evidência(s)**                     |
-| :-----------------------------------------------------: |
-| [Vídeo]() |
-
----
-
-### 🐞 **Bug 84: Cadastro de cliente aceita data de nascimento futura**
-
-| **ID** | **Descrição** |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-084 | O cadastro de cliente aceita a data de nascimento 31/12/2027, posterior à data atual, e a ficha do cliente exibe a idade "-2 anos". |
+| BUG-083 | O cadastro de cliente aceita a data de nascimento 31/12/2027, posterior à data atual, e a ficha do cliente exibe a idade "-2 anos". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3197,7 +3161,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
-| Clientes / Cadastro | C04-CT13: Cadastro de cliente com data de nascimento futura |
+| Clientes / Cadastro | C04-CT12: Cadastro de cliente com data de nascimento futura |
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
@@ -3205,11 +3169,11 @@
 
 ---
 
-### 🐞 **Bug 85: CPF inválido é aceito no cadastro de cliente**
+### 🐞 **Bug 84: CPF inválido é aceito no cadastro de cliente**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-085 | O cadastro e a alteração de cliente aceitam o CPF "111.111.111-11", sem validação do dígito verificador. |
+| BUG-084 | O cadastro e a alteração de cliente aceitam o CPF "111.111.111-11", sem validação do dígito verificador. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3234,7 +3198,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
-| Clientes / Cadastro e alteração | C04-CT14: Cadastro de cliente com CPF inválido |
+| Clientes / Cadastro e alteração | C04-CT13: Cadastro de cliente com CPF inválido |
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
@@ -3242,11 +3206,11 @@
 
 ---
 
-### 🐞 **Bug 86: Filtro de status "Ativo" lista clientes inativos**
+### 🐞 **Bug 85: Filtro de status "Ativo" lista clientes inativos**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-086 | Com o filtro "Status" em "Ativo", a listagem de clientes exibe clientes com status INATIVO. |
+| BUG-085 | Com o filtro "Status" em "Ativo", a listagem de clientes exibe clientes com status INATIVO. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3271,7 +3235,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
-| Clientes / Filtro por status | C04-CT15: Filtro de clientes pelo status "Ativo" |
+| Clientes / Filtro por status | C04-CT14: Filtro de clientes pelo status "Ativo" |
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
@@ -3279,11 +3243,11 @@
 
 ---
 
-### 🐞 **Bug 87: Ficha do cliente exibe "null" e objetivos fictícios**
+### 🐞 **Bug 86: Ficha do cliente exibe "null" e objetivos fictícios**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-087 | A ficha de um cliente cadastrado sem telefone e sem endereço exibe o telefone como "null", o bairro como "null" na alteração e o card "Objetivos" com "Perda de peso e ganho de resistência" e "Progresso geral 60%", sem que esses dados tenham sido cadastrados. |
+| BUG-086 | A ficha de um cliente cadastrado sem telefone e sem endereço exibe o telefone como "null", o bairro como "null" na alteração e o card "Objetivos" com "Perda de peso e ganho de resistência" e "Progresso geral 60%", sem que esses dados tenham sido cadastrados. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3309,7 +3273,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
-| Clientes / Visualização | C04-CT16: Visualização da ficha de cliente recém-cadastrado |
+| Clientes / Visualização | C04-CT15: Visualização da ficha de cliente recém-cadastrado |
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
@@ -3317,48 +3281,11 @@
 
 ---
 
-### 🐞 **Bug 88: Matrículas ativas pertencem a clientes inativos**
+### 🐞 **Bug 87: Campo "Data" da parcela aceita data inválida**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-088 | A tela de Matrículas exibe 3 matrículas ativas, mas a tela de Clientes exibe apenas 1 cliente ativo. Os clientes das outras duas matrículas ativas aparecem como INATIVO. |
-
-| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
-| --------------------- | -------------------------- | ---------- |
-| Alta | Alta | Aberto |
-
-| **Passo a passo para simular o bug** |
-| -------------------------------------------------------------- |
-| 1. Acessar a listagem de matrículas e anotar as matrículas com status ATIVO. |
-| 2. Acessar a listagem de clientes com o filtro "Status" em "Ativo". |
-| 3. Procurar os clientes das matrículas ativas. |
-
-| **Comportamento Esperado** | **Comportamento Obtido** |
-| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Cada matrícula ativa deve pertencer a um cliente ativo. | Matrículas ativas: 242 (Marcelo Longo Zandonadi), 241 (Rafaela Andrade) e 240 (Lila). Clientes ativos: apenas 408 (Lila); os demais aparecem como INATIVO. |
-
-| **Ambiente** |
-| ------------------------ |
-| Ambiente de homologação. |
-| Desktop com Linux. |
-| Navegador Google Chrome. |
-| Sistema SIFIT. |
-
-| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
-| -------------------------- | ------------------------------------------ |
-| Matrículas / Clientes | C06-CT13: Matrículas ativas pertencem a clientes ativos |
-
-|                    **Evidência(s)**                     |
-| :-----------------------------------------------------: |
-| [Vídeo]() |
-
----
-
-### 🐞 **Bug 89: Campo "Data" da parcela aceita data inválida**
-
-| **ID** | **Descrição** |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-089 | O campo "Data" da janela "Quantidade Parcelas", exibida ao salvar a matrícula, aceita a data inválida "2026/05/192". |
+| BUG-087 | O campo "Data" da janela "Quantidade Parcelas", exibida ao salvar a matrícula, aceita a data inválida "2026/05/192". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3383,7 +3310,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | -------------------------- | ------------------------------------------ |
-| Matrículas / Parcelas | C06-CT14: Data inválida na parcela da matrícula |
+| Matrículas / Parcelas | C06-CT13: Data inválida na parcela da matrícula |
 
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
@@ -3391,11 +3318,11 @@
 
 ---
 
-### 🐞 **Bug 90: Indicadores de contas a receber não correspondem à listagem**
+### 🐞 **Bug 88: Indicadores de contas a receber não correspondem à listagem**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-090 | Os indicadores do mês não correspondem às contas listadas: "Entradas" exibe R$ 499,50 (soma das linhas), mas "Recebido no Mês" exibe R$ 475,00 com "100,00% recebido", e "Previsto para o Mês" e "Pendentes no Mês" não consideram as contas pendentes. A conta 1608 também possui valor recebido (R$ 100,00) maior que o valor a receber (R$ 75,50). |
+| BUG-088 | Os indicadores do mês não correspondem às contas listadas: "Entradas" exibe R$ 499,50 (soma das linhas), mas "Recebido no Mês" exibe R$ 475,00 com "100,00% recebido", e "Previsto para o Mês" e "Pendentes no Mês" não consideram as contas pendentes. A conta 1608 também possui valor recebido (R$ 100,00) maior que o valor a receber (R$ 75,50). |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3428,11 +3355,11 @@
 
 ---
 
-### 🐞 **Bug 91: Horário de pico diverge entre a Página Inicial e o Check-in**
+### 🐞 **Bug 89: Horário de pico diverge entre a Página Inicial e o Check-in**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-091 | A Página Inicial exibe o pico de movimento em "00h - 01h", enquanto a tela de check-in exibe "18h às 20h". |
+| BUG-089 | A Página Inicial exibe o pico de movimento em "00h - 01h", enquanto a tela de check-in exibe "18h às 20h". |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3464,11 +3391,11 @@
 
 ---
 
-### 🐞 **Bug 92: Mensagem genérica ao salvar enquete vazia**
+### 🐞 **Bug 90: Mensagem genérica ao salvar enquete vazia**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-092 | Ao salvar uma enquete com o formulário vazio, a requisição retorna sucesso (200), mas a tela exibe "Erro ao salvar enquete", sem indicar o campo obrigatório. |
+| BUG-090 | Ao salvar uma enquete com o formulário vazio, a requisição retorna sucesso (200), mas a tela exibe "Erro ao salvar enquete", sem indicar o campo obrigatório. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3502,11 +3429,11 @@
 
 ---
 
-### 🐞 **Bug 93: Cadastro de atividade aceita registro em branco**
+### 🐞 **Bug 91: Cadastro de atividade aceita registro em branco**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-093 | Ao salvar o formulário de Atividades vazio, o sistema cria uma atividade sem nome, descrição e pontuação, sem mensagem de validação. |
+| BUG-091 | Ao salvar o formulário de Atividades vazio, o sistema cria uma atividade sem nome, descrição e pontuação, sem mensagem de validação. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3540,11 +3467,11 @@
 
 ---
 
-### 🐞 **Bug 94: Cadastro de objetivo de treino aceita registro em branco**
+### 🐞 **Bug 92: Cadastro de objetivo de treino aceita registro em branco**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-094 | Ao salvar o formulário de Objetivos de Treino vazio, o sistema cria um objetivo sem nome, sem mensagem de validação. |
+| BUG-092 | Ao salvar o formulário de Objetivos de Treino vazio, o sistema cria um objetivo sem nome, sem mensagem de validação. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3578,11 +3505,11 @@
 
 ---
 
-### 🐞 **Bug 95: Cadastro de tipo de pagamento aceita registro em branco**
+### 🐞 **Bug 93: Cadastro de tipo de pagamento aceita registro em branco**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-095 | Ao salvar o formulário de Tipos de Pagamento vazio, o sistema cria um tipo de pagamento sem nome, sem mensagem de validação. |
+| BUG-093 | Ao salvar o formulário de Tipos de Pagamento vazio, o sistema cria um tipo de pagamento sem nome, sem mensagem de validação. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |
@@ -3616,11 +3543,11 @@
 
 ---
 
-### 🐞 **Bug 96: Erro interno ao salvar pergunta de anamnese vazia**
+### 🐞 **Bug 94: Erro interno ao salvar pergunta de anamnese vazia**
 
 | **ID** | **Descrição** |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-096 | Ao salvar uma pergunta de anamnese com o formulário vazio, a requisição retorna erro 500 e a tela exibe "Erro ao salvar pergunta", sem indicar o campo obrigatório. |
+| BUG-094 | Ao salvar uma pergunta de anamnese com o formulário vazio, a requisição retorna erro 500 e a tela exibe "Erro ao salvar pergunta", sem indicar o campo obrigatório. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | --------------------- | -------------------------- | ---------- |

@@ -243,30 +243,3 @@
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
 | [Vídeo](https://jam.dev/c/06bd8930-85a1-4de6-8889-eb73d57b799d)      |
-
----
-
-### Caso de Teste 10: Prevenção de duplo clique no botão "Entrar".
-
-| ID | Descrição |
-| :--- | :--- |
-| C01-CT10 | Verificar se o botão "Entrar" é desabilitado durante o processamento, impedindo envios repetidos. |
-
-| **Pré-condições** |
-| :--- |
-| O usuário deve possuir credenciais válidas. |
-
-| **Passos** |
-| :--- |
-| **DADO** que acessamos a página de login do SIFIT |
-| **E** informamos usuário e senha válidos |
-| **QUANDO** clicarmos repetidamente e rapidamente no botão "Entrar" |
-| **ENTÃO** o botão deverá ser desabilitado após o primeiro clique e apenas uma requisição deverá ser enviada |
-
-| **Critérios de aceitação** |
-| :--- |
-| O sistema deve enviar uma única requisição de login, mesmo com cliques repetidos. |
-
-|                    **Evidência(s)**                     |
-| :-----------------------------------------------------: |
-| [Vídeo]()      |
