@@ -15,7 +15,9 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 191                     | 115            | 76             | 76               |
+| 220                     | 124            | 96             | 96               |
+
+> Outros 2 casos (C01-CT10 e C06-CT15) foram incorporados de trabalhos anteriores e aguardam execução.
 
 ---
 
@@ -23,15 +25,15 @@
 
 | Código RF | Módulo                    | Casos Testados | Casos Passaram | Bugs encontrados | Bug(s) Associado(s)                                |
 | --------- | ------------------------- | -------------- | -------------- | ---------------- | -------------------------------------------------- |
-| RF01      | Autenticação de Usuário   | 3              | 2              | 1                | BUG-001 |
-| RF02      | Página Inicial            | 7              | 4              | 3                | BUG-002, BUG-003, BUG-004 |
+| RF01      | Autenticação de Usuário   | 9              | 4              | 4                | BUG-001, BUG-077, BUG-078, BUG-079 |
+| RF02      | Página Inicial            | 9              | 4              | 6                | BUG-002, BUG-003, BUG-004, BUG-080, BUG-081, BUG-082 |
 | RF03      | Dashboard                 | 4              | 1              | 3                | BUG-002, BUG-005, BUG-006 |
-| RF04      | Gestão de Clientes        | 11             | 5              | 7                | BUG-007, BUG-008, BUG-009, BUG-010, BUG-011, BUG-012, BUG-013 |
-| RF05      | Gestão de Planos          | 11             | 5              | 6                | BUG-014, BUG-015, BUG-016, BUG-017, BUG-018, BUG-019 |
-| RF06      | Gestão de Matrículas      | 12             | 6              | 7                | BUG-020, BUG-021, BUG-022, BUG-023, BUG-024, BUG-025, BUG-026 |
-| RF07      | Contas a Receber          | 12             | 8              | 4                | BUG-027, BUG-028, BUG-029, BUG-030 |
+| RF04      | Gestão de Clientes        | 16             | 5              | 12               | BUG-007, BUG-008, BUG-009, BUG-010, BUG-011, BUG-012, BUG-013, BUG-083, BUG-084, BUG-085, BUG-086, BUG-087 |
+| RF05      | Gestão de Planos          | 14             | 8              | 6                | BUG-014, BUG-015, BUG-016, BUG-017, BUG-018, BUG-019 |
+| RF06      | Gestão de Matrículas      | 14             | 6              | 9                | BUG-020, BUG-021, BUG-022, BUG-023, BUG-024, BUG-025, BUG-026, BUG-088, BUG-089 |
+| RF07      | Contas a Receber          | 13             | 8              | 5                | BUG-027, BUG-028, BUG-029, BUG-030, BUG-090 |
 | RF08      | Gestão de Fornecedores    | 9              | 6              | 3                | BUG-031, BUG-032, BUG-033 |
-| RF09      | Check-in e Presenças      | 11             | 4              | 6                | BUG-034, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039 |
+| RF09      | Check-in e Presenças      | 12             | 4              | 7                | BUG-034, BUG-035, BUG-036, BUG-037, BUG-038, BUG-039, BUG-091 |
 | RF10      | Avaliações                | 11             | 7              | 4                | BUG-040, BUG-041, BUG-042, BUG-043 |
 | RF11      | Turmas e SifitBox         | 13             | 10             | 3                | BUG-044, BUG-045, BUG-046 |
 | RF12      | Caixas                    | 11             | 5              | 6                | BUG-047, BUG-048, BUG-049, BUG-050, BUG-051, BUG-052 |
@@ -41,6 +43,7 @@
 | RF16      | Colaboradores e Funções   | 17             | 12             | 5                | BUG-064, BUG-065, BUG-066, BUG-067, BUG-068 |
 | RF17      | Produtos                  | 11             | 7              | 4                | BUG-069, BUG-070, BUG-071, BUG-072 |
 | RF18      | Fichas de Anamnese        | 7              | 3              | 4                | BUG-073, BUG-074, BUG-075, BUG-076 |
+| RF20      | Cadastros Auxiliares      | 9              | 4              | 5                | BUG-092, BUG-093, BUG-094, BUG-095, BUG-096 |
 
 ---
 
@@ -124,6 +127,26 @@
 | BUG-074 | Perguntas do modelo de anamnese não são exibidas                      | Alta       | Aberto |
 | BUG-075 | Assistente de anamnese avança sem aluno e falha com erro interno      | Média      | Aberto |
 | BUG-076 | Nome do aluno não é exibido na escolha do modelo de anamnese          | Baixa      | Aberto |
+| BUG-077 | Login falha com espaços extras nas credenciais válidas                | Baixa      | Aberto |
+| BUG-078 | Falha na persistência e no controle da sessão                         | Alta       | Aberto |
+| BUG-079 | Link "Esqueci minha senha" não executa nenhuma ação                 | Alta       | Aberto |
+| BUG-080 | Card de avaliações pendentes exibe 0, mas a listagem possui pendentes | Média      | Aberto |
+| BUG-081 | Filtro de período aceita data inicial maior que a final               | Baixa      | Aberto |
+| BUG-082 | Rodapé do Radar de Evasão exibe a faixa errada de alunos              | Baixa      | Aberto |
+| BUG-083 | Campo "Código" da busca de clientes aceita letras                   | Baixa      | Aberto |
+| BUG-084 | Cadastro de cliente aceita data de nascimento futura                  | Média      | Aberto |
+| BUG-085 | CPF inválido é aceito no cadastro de cliente                          | Média      | Aberto |
+| BUG-086 | Filtro de status "Ativo" lista clientes inativos                    | Média      | Aberto |
+| BUG-087 | Ficha do cliente exibe "null" e objetivos fictícios                 | Baixa      | Aberto |
+| BUG-088 | Matrículas ativas pertencem a clientes inativos                       | Alta       | Aberto |
+| BUG-089 | Campo "Data" da parcela aceita data inválida                        | Média      | Aberto |
+| BUG-090 | Indicadores de contas a receber não correspondem à listagem           | Média      | Aberto |
+| BUG-091 | Horário de pico diverge entre a Página Inicial e o Check-in           | Baixa      | Aberto |
+| BUG-092 | Mensagem genérica ao salvar enquete vazia                             | Baixa      | Aberto |
+| BUG-093 | Cadastro de atividade aceita registro em branco                       | Média      | Aberto |
+| BUG-094 | Cadastro de objetivo de treino aceita registro em branco              | Média      | Aberto |
+| BUG-095 | Cadastro de tipo de pagamento aceita registro em branco               | Média      | Aberto |
+| BUG-096 | Erro interno ao salvar pergunta de anamnese vazia                     | Média      | Aberto |
 
 ---
 
@@ -131,15 +154,16 @@
 
 **Casos por status:**
 
-* ✅ Passaram: 115
-* ❌ Falharam: 76
+* ✅ Passaram: 124
+* ❌ Falharam: 96
+* ⏳ Aguardando execução: 2
 
 **Severidade dos bugs:**
 
 * 🟥 Crítica: 2
-* 🟧 Alta: 13
-* 🟨 Média: 35
-* 🟩 Baixa: 26
+* 🟧 Alta: 16
+* 🟨 Média: 45
+* 🟩 Baixa: 33
 
 ---
 
@@ -166,6 +190,7 @@
   * [CT_RF16 - Colaboradores e funções](Cenarios%20de%20testes/CT_RF16_%20Colaboradores%20e%20fun%C3%A7%C3%B5es.md)
   * [CT_RF17 - Produtos](Cenarios%20de%20testes/CT_RF17_%20Produtos.md)
   * [CT_RF18 - Fichas de anamnese](Cenarios%20de%20testes/CT_RF18_%20Fichas%20de%20anamnese.md)
+  * [CT_RF20 - Cadastros auxiliares](Cenarios%20de%20testes/CT_RF20_%20Cadastros%20auxiliares.md)
 * 🐛 [Relatório de Bugs com Evidências em Vídeo](3-Relatorio-de-Bugs.md)
 * 📹 Evidências em vídeo hospedadas no [Jam.dev](https://jam.dev)
 
@@ -207,9 +232,13 @@ No módulo de **Produtos**, a busca, os filtros e o cadastro, alteração, inati
 
 No módulo de **Fichas de Anamnese**, o assistente localiza o aluno e grava a anamnese, mas **as perguntas do modelo não são exibidas** (BUG-074) e **as anamneses aplicadas não aparecem na listagem** (BUG-073), o que torna o módulo inutilizável para o acompanhamento de saúde dos alunos.
 
+Os casos incorporados de trabalhos anteriores reforçaram a análise: na **autenticação**, a recuperação de senha não funciona (BUG-079) e **a área interna pode ser aberta pelo endereço direto sem sessão válida** (BUG-078); em **Clientes**, o cadastro **aceita CPF inválido e data de nascimento futura** (BUG-084 e BUG-085) e o filtro de status lista clientes inativos (BUG-086); em **Matrículas**, há **matrículas ativas vinculadas a clientes inativos** (BUG-088); e em Contas a Receber os **indicadores do mês não correspondem à listagem** (BUG-090).
+
+No módulo de **Cadastros Auxiliares**, Bandeiras de Cartão, Pontuação, Tipos de Documentos e Categorias Crossfit validam o nome corretamente, mas **Atividades, Objetivos de Treino e Tipos de Pagamento gravam registros em branco** (BUG-093 a BUG-095), e Enquetes e Perguntas de Anamnese exibem mensagens genéricas ou erro interno (BUG-092 e BUG-096).
+
 Também foram encontradas falhas de **busca e paginação** (BUG-008, BUG-009 e BUG-010) e de **mensagens ao usuário** (BUG-001, BUG-011, BUG-013, BUG-021, BUG-024 e BUG-025), que prejudicam a **experiência do usuário**, mas não impedem o uso do sistema.
 
-Recomenda-se priorizar a correção dos bugs críticos e reexecutar os casos C04-CT08 e C04-CT10 (cadastro e alteração de clientes) após a correção, incluindo as validações de CPF e data de nascimento no cadastro, que não puderam ser avaliadas enquanto o cadastro estiver indisponível.
+Recomenda-se priorizar a correção dos bugs críticos e reexecutar os casos C04-CT08 e C04-CT10 (cadastro e alteração de clientes) após a correção, incluindo as validações de CPF e data de nascimento no cadastro (BUG-084 e BUG-085).
 
 🔍 Identificação da Causa Raiz (Root Cause Analysis)
 A identificação da causa raiz é uma etapa essencial no processo de garantia de qualidade (QA), pois busca entender por que um defeito ocorreu, indo além dos sintomas visíveis do problema. Essa análise ajuda a evitar recorrência de falhas, melhorando a qualidade do software a longo prazo.

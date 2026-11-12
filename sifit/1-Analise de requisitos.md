@@ -8,6 +8,8 @@
 
   * O sistema deve exibir mensagens de erro em caso de login inválido.
 
+  * O sistema deve permitir a recuperação de senha, manter a sessão quando "Manter conectado" for marcado e impedir o acesso às telas internas sem sessão válida ou após o logout.
+
 ---
 
 
@@ -164,5 +166,12 @@
 ### 🩺 **RF18 - Fichas de Anamnese**
 
   * O sistema deve permitir aplicar anamneses aos alunos por meio de um assistente (seleção do aluno, escolha do modelo, resposta às perguntas e finalização), exibindo as fichas aplicadas na listagem com busca, filtro de status e indicadores.
+
+---
+
+
+### 🗂️ **RF20 - Cadastros Auxiliares**
+
+  * O sistema deve permitir manter os cadastros auxiliares (Bandeiras de Cartão, Pontuação, Enquetes, Atividades, Tipos de Documentos, Categorias Crossfit, Objetivos de Treino, Tipos de Pagamento e Perguntas de Anamnese), validando o nome como campo obrigatório e sem gravar registros em branco.
 
 ---

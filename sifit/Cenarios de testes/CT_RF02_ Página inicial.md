@@ -181,3 +181,58 @@
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
 | [Vídeo](https://jam.dev/c/ebe16560-9f44-4e26-9e7a-1eb6d9e48a49)      |
+
+---
+
+### Caso de Teste 08: Card de avaliações pendentes.
+
+| ID | Descrição |
+| :--- | :--- |
+| C02-CT08 | Verificar se a quantidade do card de avaliações pendentes corresponde à listagem de avaliações com status Pendente. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que estamos na Página Inicial |
+| **E** observamos a quantidade do card de avaliações pendentes |
+| **QUANDO** clicarmos em "Ver detalhes" do card |
+| **ENTÃO** a tela de Avaliações deverá abrir filtrada pelo status Pendente |
+| **E** a quantidade listada deverá ser a mesma do card |
+
+| **Critérios de aceitação** |
+| :--- |
+| O card e a listagem filtrada devem apresentar a mesma quantidade de avaliações pendentes. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/4f672eb2-1483-4e93-8181-cea811350409)      |
+
+---
+
+### Caso de Teste 09: Filtro de período com data inicial maior que a final.
+
+| ID | Descrição |
+| :--- | :--- |
+| C02-CT09 | Verificar se o sistema impede ou alerta sobre um período com data inicial posterior à data final. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que estamos na Página Inicial |
+| **E** selecionamos 31/10/2026 como data inicial |
+| **QUANDO** selecionarmos 01/10/2026 como data final |
+| **ENTÃO** o sistema deverá bloquear a seleção ou exibir um aviso de período inválido |
+
+| **Critérios de aceitação** |
+| :--- |
+| Um período invertido não deve ser aceito. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/5f7f9e52-3989-42d5-99c2-66b747dec9e3)      |

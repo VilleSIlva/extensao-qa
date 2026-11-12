@@ -293,3 +293,82 @@
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
 | [Vídeo](https://jam.dev/c/10a1fc37-182b-4eac-9caf-2300fbd8aa54)      |
+
+---
+
+### Caso de Teste 12: Cadastro de plano com o formulário vazio.
+
+| ID | Descrição |
+| :--- | :--- |
+| C05-CT12 | Verificar se o sistema impede o cadastro de plano sem nenhum campo preenchido. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que abrimos o formulário "Novo Plano" |
+| **QUANDO** clicarmos no botão "Salvar Plano" sem preencher nenhum campo |
+| **ENTÃO** o campo "Nome" deverá ser sinalizado como obrigatório |
+
+| **Critérios de aceitação** |
+| :--- |
+| O cadastro deve ser bloqueado e o campo obrigatório informado. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Print](../Evidencias/C05-CT12.png)      |
+
+---
+
+### Caso de Teste 13: Cadastro de plano com valor mensal negativo.
+
+| ID | Descrição |
+| :--- | :--- |
+| C05-CT13 | Verificar se o campo "Valor Mensal" recusa valores negativos. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que abrimos o formulário "Novo Plano" |
+| **QUANDO** digitarmos "-50" no campo "Valor Mensal" |
+| **ENTÃO** o sistema não deverá aceitar o valor negativo |
+
+| **Critérios de aceitação** |
+| :--- |
+| O sinal negativo deve ser ignorado ou rejeitado. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Print](../Evidencias/C05-CT13.png)      |
+
+---
+
+### Caso de Teste 14: Filtro de planos pelo status "Inativo".
+
+| ID | Descrição |
+| :--- | :--- |
+| C05-CT14 | Verificar se o filtro "Status" em "Inativo" lista somente planos inativos. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado e existirem planos ativos e inativos. |
+
+| **Passos** |
+| :--- |
+| **DADO** que estamos na listagem de planos |
+| **E** selecionamos "Inativo" no filtro "Status" |
+| **QUANDO** clicarmos no botão "Buscar" |
+| **ENTÃO** somente planos inativos deverão ser listados |
+
+| **Critérios de aceitação** |
+| :--- |
+| A listagem deve exibir apenas planos inativos. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Print](../Evidencias/C05-CT14.png)      |

@@ -319,3 +319,30 @@
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
 | [Vídeo](https://jam.dev/c/68fb4963-d268-4a72-bd29-45e807c138d0)      |
+
+---
+
+### Caso de Teste 13: Indicadores do mês coerentes com a listagem.
+
+| ID | Descrição |
+| :--- | :--- |
+| C07-CT13 | Verificar se os indicadores "Entradas", "Previsto para o Mês", "Recebido no Mês" e "Pendentes no Mês" correspondem às contas listadas. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado e existirem contas recebidas e pendentes no mês. |
+
+| **Passos** |
+| :--- |
+| **DADO** que estamos na tela de contas a receber com o período do mês |
+| **QUANDO** compararmos os indicadores do topo com as contas da listagem |
+| **ENTÃO** os valores recebidos deverão corresponder a "Entradas" e "Recebido no Mês" |
+| **E** "Previsto para o Mês" e "Pendentes no Mês" deverão incluir as contas pendentes |
+
+| **Critérios de aceitação** |
+| :--- |
+| Os indicadores devem ser coerentes com as contas exibidas na listagem. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/d2060185-943a-429b-bb7f-786c1bcd6119)      |

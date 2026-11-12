@@ -131,9 +131,9 @@ A sequência segue o fluxo de uso do sistema: acesso, visão geral, cadastro do 
 | RF17      | Produtos                                 | Baixa      | ✅ Executado  |
 | RF18      | Fichas de Anamnese                       | Baixa      | ✅ Executado  |
 | RF19      | Relatórios                               | Média      | ⏳ Pendente   |
-| RF20      | Cadastros Auxiliares                     | Baixa      | ⏳ Pendente   |
+| RF20      | Cadastros Auxiliares                     | Baixa      | ✅ Executado  |
 
-**Resumo:** 18 de 20 módulos executados, com 191 casos de teste e 76 bugs registrados até o momento.
+**Resumo:** 19 de 20 módulos executados, com 222 casos de teste (220 executados) e 96 bugs registrados até o momento.
 
 ---
 

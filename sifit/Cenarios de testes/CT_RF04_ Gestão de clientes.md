@@ -293,3 +293,137 @@
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
 | [Vídeo](https://jam.dev/c/a0153288-ba95-4015-852c-17228345f666)      |
+
+---
+
+### Caso de Teste 12: Letras no campo Código da busca.
+
+| ID | Descrição |
+| :--- | :--- |
+| C04-CT12 | Verificar se o campo "Código" da busca de clientes aceita somente números. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que estamos na listagem de clientes |
+| **QUANDO** digitarmos "abc" no campo "Código" |
+| **ENTÃO** o campo não deverá aceitar as letras |
+
+| **Critérios de aceitação** |
+| :--- |
+| O campo "Código" deve recusar caracteres que não sejam números. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]()      |
+
+---
+
+### Caso de Teste 13: Cadastro de cliente com data de nascimento futura.
+
+| ID | Descrição |
+| :--- | :--- |
+| C04-CT13 | Verificar se o sistema impede o cadastro de cliente com data de nascimento posterior à data atual. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que abrimos o formulário "Novo Cliente" |
+| **E** informamos o nome "Cliente Teste Ville", o status "Ativo" e o sexo "Masculino" |
+| **E** informamos a data de nascimento 31/12/2027 |
+| **QUANDO** clicarmos no botão "Cadastrar Cliente" |
+| **ENTÃO** o sistema deverá rejeitar a data futura |
+
+| **Critérios de aceitação** |
+| :--- |
+| O cadastro deve ser bloqueado com uma mensagem de data inválida. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/f3cd80a9-c549-4e43-8957-182eaa983f3d)      |
+
+---
+
+### Caso de Teste 14: Cadastro de cliente com CPF inválido.
+
+| ID | Descrição |
+| :--- | :--- |
+| C04-CT14 | Verificar se o sistema valida o dígito verificador do CPF no cadastro e na alteração do cliente. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que estamos no cadastro ou na alteração de um cliente |
+| **E** informamos o CPF "111.111.111-11" |
+| **QUANDO** clicarmos em "Cadastrar Cliente" ou "Salvar Alterações" |
+| **ENTÃO** o sistema deverá informar que o CPF é inválido e não salvar |
+
+| **Critérios de aceitação** |
+| :--- |
+| O CPF inválido deve ser rejeitado. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/aee4435d-fdbd-4a84-bfe5-d8a28801ecd7)      |
+
+---
+
+### Caso de Teste 15: Filtro de clientes pelo status "Ativo".
+
+| ID | Descrição |
+| :--- | :--- |
+| C04-CT15 | Verificar se, com o filtro "Status" em "Ativo", somente clientes ativos são listados. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado e existirem clientes ativos e inativos. |
+
+| **Passos** |
+| :--- |
+| **DADO** que estamos na listagem de clientes |
+| **E** o filtro "Status" está em "Ativo" |
+| **QUANDO** a listagem for exibida |
+| **ENTÃO** nenhum cliente com status INATIVO deverá aparecer |
+
+| **Critérios de aceitação** |
+| :--- |
+| Somente clientes ativos devem ser listados. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/a6adccf3-ae4c-47f8-9343-8ad793e5758e)      |
+
+---
+
+### Caso de Teste 16: Visualização da ficha de cliente recém-cadastrado.
+
+| ID | Descrição |
+| :--- | :--- |
+| C04-CT16 | Verificar se a ficha do cliente exibe apenas dados reais, sem "null" ou informações fictícias. |
+
+| **Pré-condições** |
+| :--- |
+| Deve existir um cliente de teste cadastrado sem telefone e sem endereço. |
+
+| **Passos** |
+| :--- |
+| **DADO** que estamos na listagem de clientes |
+| **QUANDO** clicarmos em "Visualizar" no cliente de teste |
+| **ENTÃO** os campos sem informação deverão aparecer em branco ou com "-", sem dados fictícios |
+
+| **Critérios de aceitação** |
+| :--- |
+| A ficha não deve exibir "null" nem dados que não foram cadastrados. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/a4c73bde-5ac1-43ad-8a47-3ebde1f4e346)      |

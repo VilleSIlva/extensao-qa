@@ -289,3 +289,29 @@
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
 | [Vídeo]()      |
+
+---
+
+### Caso de Teste 12: Horário de pico entre a Página Inicial e o Check-in.
+
+| ID | Descrição |
+| :--- | :--- |
+| C09-CT12 | Verificar se o horário de pico de movimento é o mesmo na Página Inicial e na tela de check-in. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que observamos o card "Pico de movimento" da Página Inicial |
+| **QUANDO** acessarmos a tela de check-in e observarmos o "Pico de movimento" |
+| **ENTÃO** os dois horários deverão ser iguais |
+
+| **Critérios de aceitação** |
+| :--- |
+| A faixa de horário de pico deve ser a mesma nas duas telas. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]()      |

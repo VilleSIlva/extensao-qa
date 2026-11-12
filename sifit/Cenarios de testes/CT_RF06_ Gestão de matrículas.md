@@ -322,3 +322,85 @@
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
 | [Vídeo](https://jam.dev/c/21646323-7507-4ece-a3b1-16ab9def23ef)      |
+
+---
+
+### Caso de Teste 13: Matrículas ativas pertencem a clientes ativos.
+
+| ID | Descrição |
+| :--- | :--- |
+| C06-CT13 | Verificar se os clientes das matrículas ativas aparecem como ativos na tela de clientes. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que estamos na listagem de matrículas |
+| **E** anotamos as matrículas com status ATIVO |
+| **QUANDO** acessarmos a listagem de clientes com o filtro "Status" em "Ativo" |
+| **ENTÃO** os clientes das matrículas ativas deverão aparecer como ativos |
+
+| **Critérios de aceitação** |
+| :--- |
+| A quantidade e os nomes dos clientes ativos devem ser coerentes com as matrículas ativas. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]()      |
+
+---
+
+### Caso de Teste 14: Data inválida na parcela da matrícula.
+
+| ID | Descrição |
+| :--- | :--- |
+| C06-CT14 | Verificar se o campo "Data" da janela "Quantidade Parcelas" aceita somente datas válidas. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado e o formulário de matrícula deve estar preenchido. |
+
+| **Passos** |
+| :--- |
+| **DADO** que preenchemos o formulário de matrícula e clicamos em "Salvar" |
+| **E** a janela "Quantidade Parcelas" é exibida |
+| **QUANDO** informarmos a data inválida "2026/05/192" no campo "Data" |
+| **ENTÃO** o sistema deverá rejeitar a data informada |
+
+| **Critérios de aceitação** |
+| :--- |
+| Somente datas válidas no padrão DD/MM/AAAA devem ser aceitas. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e)      |
+
+---
+
+### Caso de Teste 15: Matrícula com data de término anterior à data de início.
+
+| ID | Descrição |
+| :--- | :--- |
+| C06-CT15 | Verificar se o sistema impede a matrícula quando a data de término é anterior à data de início. |
+
+| **Pré-condições** |
+| :--- |
+| O usuário deve estar autenticado na plataforma SIFIT. |
+
+| **Passos** |
+| :--- |
+| **DADO** que abrimos o formulário "Nova Matrícula" |
+| **E** selecionamos o cliente e o plano |
+| **E** informamos uma data de término anterior à data de início |
+| **QUANDO** clicarmos no botão "Salvar" |
+| **ENTÃO** o sistema deverá impedir o cadastro e informar que a data de término não pode ser anterior à data de início |
+
+| **Critérios de aceitação** |
+| :--- |
+| A matrícula não deve ser salva com período incoerente. |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]()      |

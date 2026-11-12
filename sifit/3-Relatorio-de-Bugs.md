@@ -2902,3 +2902,752 @@
 |                    **Evidência(s)**                     |
 | :-----------------------------------------------------: |
 | [Vídeo]() |
+
+---
+
+### 🐞 **Bug 77: Login falha com espaços extras nas credenciais válidas**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-077 | Ao informar usuário e senha válidos com espaços no início ou no fim dos campos, o sistema recusa o login, em vez de desconsiderar os espaços das extremidades. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Baixa | Baixa | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a página de login do SIFIT. |
+| 2. Informar um usuário válido com espaços no início ou no fim. |
+| 3. Informar a senha correta com espaços no início ou no fim. |
+| 4. Clicar no botão "Entrar". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve desconsiderar os espaços das extremidades e autenticar o usuário. | O login é recusado e o usuário permanece na tela de login. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Login / Autenticação de usuário | C01-CT04: Login com espaços extras nas credenciais válidas |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/51531b19-254b-468b-ad89-7487194fc22a) |
+
+---
+
+### 🐞 **Bug 78: Falha na persistência e no controle da sessão**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-078 | Com a opção "Manter conectado" marcada, o SIFIT solicita o login novamente ao ser reaberto. Além disso, sem sessão válida, o endereço /dashboard abre a área autenticada. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a página de login, informar credenciais válidas e marcar "Manter conectado". |
+| 2. Clicar em "Entrar", fechar e abrir o SIFIT novamente. |
+| 3. Verificar se o login é solicitado. |
+| 4. Na tela de login, sem sessão válida, informar o endereço /dashboard na barra de endereços. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| A sessão deve continuar ativa com "Manter conectado", e o endereço /dashboard deve exigir login quando não há sessão válida. | O sistema solicita o login novamente ao reabrir o SIFIT, e o endereço /dashboard é exibido sem sessão válida. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Login / Sessão / Controle de acesso | C01-CT05: Persistência da sessão com "Manter conectado" / C01-CT06: Acesso ao Dashboard sem sessão válida |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/0e862f82-e4d0-49df-9406-0ff970332873) |
+
+---
+
+### 🐞 **Bug 79: Link "Esqueci minha senha" não executa nenhuma ação**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-079 | Ao clicar no link "Esqueci minha senha" na página de login, o sistema permanece na mesma tela e não inicia o fluxo de recuperação de senha. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a página de login do SIFIT. |
+| 2. Clicar no link "Esqueci minha senha". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve abrir a tela de recuperação de senha. | Nenhuma ação é executada e o usuário permanece na tela de login. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Login / Recuperação de senha | C01-CT07: Acesso à recuperação de senha |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/c647a93a-812e-418f-8f05-d080e188b70f) |
+
+---
+
+### 🐞 **Bug 80: Card de avaliações pendentes exibe 0, mas a listagem possui pendentes**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-080 | O card da Página Inicial exibe "0 avaliações pendentes", mas a tela de Avaliações, aberta pelo próprio card com o filtro Pendente, lista 4 avaliações pendentes. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a Página Inicial do SIFIT. |
+| 2. Observar o card de avaliações pendentes. |
+| 3. Clicar em "Ver detalhes" do card. |
+| 4. Contar as avaliações com status PENDENTE na listagem. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| A quantidade do card deve ser igual à quantidade de avaliações pendentes da listagem. | O card exibe 0 e a listagem filtrada exibe 4 avaliações pendentes (#79, #69, #67 e #52). |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Página Inicial / Avaliações | C02-CT08: Card de avaliações pendentes |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/4f672eb2-1483-4e93-8181-cea811350409) |
+
+---
+
+### 🐞 **Bug 81: Filtro de período aceita data inicial maior que a final**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-081 | O filtro de período da Página Inicial aceita a data inicial 31/10/2026 com a data final 01/10/2026, sem aviso, e os cards continuam exibindo valores. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Baixa | Baixa | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a Página Inicial do SIFIT. |
+| 2. Selecionar 31/10/2026 como data inicial. |
+| 3. Selecionar 01/10/2026 como data final. |
+| 4. Observar os cards da página. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve impedir a seleção ou informar que o período é inválido. | O período invertido é aceito sem aviso e os cards exibem dados (ex.: 2 matrículas no período). |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Página Inicial / Filtro de período | C02-CT09: Filtro de período com data inicial maior que a final |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/5f7f9e52-3989-42d5-99c2-66b747dec9e3) |
+
+---
+
+### 🐞 **Bug 82: Rodapé do Radar de Evasão exibe a faixa errada de alunos**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-082 | O rodapé do "Radar de Evasão" informa "Exibindo 3 a 4 de 4 alunos em risco", embora a tabela exiba os quatro alunos. O botão "Exportar relatório" também não apresenta arquivo nem mensagem. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Baixa | Baixa | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a Página Inicial do SIFIT. |
+| 2. Clicar em "Ver detalhes" do card de alunos em risco de evasão. |
+| 3. Comparar o rodapé "Exibindo..." com a quantidade de linhas da tabela. |
+| 4. Clicar em "Exportar relatório". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O rodapé deve indicar a faixa real de alunos exibidos, e a exportação deve gerar o relatório ou informar o resultado. | O rodapé exibe "3 a 4 de 4" com quatro linhas na tabela, e a exportação não apresenta arquivo nem mensagem. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Página Inicial / Radar de Evasão | C02-CT02: Radar de evasão |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/fa584de0-d641-465a-a2b3-d0a311bc1c5a) |
+
+---
+
+### 🐞 **Bug 83: Campo "Código" da busca de clientes aceita letras**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-083 | O campo "Código" da busca de clientes aceita e mantém letras, embora o código do cliente seja numérico. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Baixa | Baixa | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a listagem de clientes. |
+| 2. Digitar "abc" no campo "Código". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O campo deve aceitar somente números. | O campo aceita e mantém o texto "abc". |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Clientes / Busca por código | C04-CT12: Letras no campo Código da busca |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]() |
+
+---
+
+### 🐞 **Bug 84: Cadastro de cliente aceita data de nascimento futura**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-084 | O cadastro de cliente aceita a data de nascimento 31/12/2027, posterior à data atual, e a ficha do cliente exibe a idade "-2 anos". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar o formulário "Novo Cliente". |
+| 2. Informar nome, status "Ativo" e sexo "Masculino". |
+| 3. Informar a data de nascimento 31/12/2027. |
+| 4. Clicar em "Cadastrar Cliente" e visualizar o cliente. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve rejeitar a data futura e informar que a data de nascimento é inválida. | O cliente é cadastrado e a ficha exibe a idade "-2 anos". |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Clientes / Cadastro | C04-CT13: Cadastro de cliente com data de nascimento futura |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/f3cd80a9-c549-4e43-8957-182eaa983f3d) |
+
+---
+
+### 🐞 **Bug 85: CPF inválido é aceito no cadastro de cliente**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-085 | O cadastro e a alteração de cliente aceitam o CPF "111.111.111-11", sem validação do dígito verificador. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar o cadastro ou a alteração de um cliente. |
+| 2. Informar o CPF "111.111.111-11". |
+| 3. Clicar em "Cadastrar Cliente" ou "Salvar Alterações". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve informar que o CPF é inválido e não salvar o cadastro. | O CPF inválido é salvo sem nenhum aviso. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Clientes / Cadastro e alteração | C04-CT14: Cadastro de cliente com CPF inválido |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/aee4435d-fdbd-4a84-bfe5-d8a28801ecd7) |
+
+---
+
+### 🐞 **Bug 86: Filtro de status "Ativo" lista clientes inativos**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-086 | Com o filtro "Status" em "Ativo", a listagem de clientes exibe clientes com status INATIVO. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a listagem de clientes. |
+| 2. Manter o filtro "Status" em "Ativo". |
+| 3. Observar a coluna de status da listagem. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Somente clientes ativos devem ser listados. | A listagem exibe clientes com status INATIVO. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Clientes / Filtro por status | C04-CT15: Filtro de clientes pelo status "Ativo" |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/a6adccf3-ae4c-47f8-9343-8ad793e5758e) |
+
+---
+
+### 🐞 **Bug 87: Ficha do cliente exibe "null" e objetivos fictícios**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-087 | A ficha de um cliente cadastrado sem telefone e sem endereço exibe o telefone como "null", o bairro como "null" na alteração e o card "Objetivos" com "Perda de peso e ganho de resistência" e "Progresso geral 60%", sem que esses dados tenham sido cadastrados. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Baixa | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Cadastrar um cliente sem telefone e sem endereço. |
+| 2. Acessar a listagem de clientes e clicar em "Visualizar" no cliente. |
+| 3. Observar o telefone e o card "Objetivos". |
+| 4. Clicar em "Editar" e observar o campo "Bairro". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Os campos sem informação devem aparecer em branco ou com "-", sem dados fictícios. | O telefone e o bairro aparecem como "null", e o card "Objetivos" exibe objetivo e progresso não cadastrados. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Clientes / Visualização | C04-CT16: Visualização da ficha de cliente recém-cadastrado |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/a4c73bde-5ac1-43ad-8a47-3ebde1f4e346) |
+
+---
+
+### 🐞 **Bug 88: Matrículas ativas pertencem a clientes inativos**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-088 | A tela de Matrículas exibe 3 matrículas ativas, mas a tela de Clientes exibe apenas 1 cliente ativo. Os clientes das outras duas matrículas ativas aparecem como INATIVO. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Alta | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a listagem de matrículas e anotar as matrículas com status ATIVO. |
+| 2. Acessar a listagem de clientes com o filtro "Status" em "Ativo". |
+| 3. Procurar os clientes das matrículas ativas. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Cada matrícula ativa deve pertencer a um cliente ativo. | Matrículas ativas: 242 (Marcelo Longo Zandonadi), 241 (Rafaela Andrade) e 240 (Lila). Clientes ativos: apenas 408 (Lila); os demais aparecem como INATIVO. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Matrículas / Clientes | C06-CT13: Matrículas ativas pertencem a clientes ativos |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]() |
+
+---
+
+### 🐞 **Bug 89: Campo "Data" da parcela aceita data inválida**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-089 | O campo "Data" da janela "Quantidade Parcelas", exibida ao salvar a matrícula, aceita a data inválida "2026/05/192". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar o formulário "Nova Matrícula" e preencher os dados. |
+| 2. Clicar em "Salvar". |
+| 3. Na janela "Quantidade Parcelas", informar "2026/05/192" no campo "Data". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Somente datas válidas no padrão DD/MM/AAAA devem ser aceitas. | A data inválida "2026/05/192" é aceita. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Matrículas / Parcelas | C06-CT14: Data inválida na parcela da matrícula |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/02ee32cf-7b68-4011-9cd9-d0faaba8470e) |
+
+---
+
+### 🐞 **Bug 90: Indicadores de contas a receber não correspondem à listagem**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-090 | Os indicadores do mês não correspondem às contas listadas: "Entradas" exibe R$ 499,50 (soma das linhas), mas "Recebido no Mês" exibe R$ 475,00 com "100,00% recebido", e "Previsto para o Mês" e "Pendentes no Mês" não consideram as contas pendentes. A conta 1608 também possui valor recebido (R$ 100,00) maior que o valor a receber (R$ 75,50). |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a tela de contas a receber com o período do mês. |
+| 2. Somar os valores recebidos das contas listadas. |
+| 3. Comparar com os indicadores "Entradas", "Previsto para o Mês", "Recebido no Mês" e "Pendentes no Mês". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Os indicadores devem corresponder às contas da listagem, incluindo as contas pendentes. | "Entradas" (R$ 499,50) e "Recebido no Mês" (R$ 475,00) divergem, e as contas pendentes não são consideradas em "Previsto para o Mês" e "Pendentes no Mês". |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Contas a Receber / Indicadores | C07-CT13: Indicadores do mês coerentes com a listagem |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo](https://jam.dev/c/d2060185-943a-429b-bb7f-786c1bcd6119) |
+
+---
+
+### 🐞 **Bug 91: Horário de pico diverge entre a Página Inicial e o Check-in**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-091 | A Página Inicial exibe o pico de movimento em "00h - 01h", enquanto a tela de check-in exibe "18h às 20h". |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Baixa | Baixa | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a Página Inicial e observar o card "Pico de movimento". |
+| 2. Acessar a tela de check-in e observar o "Pico de movimento". |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O horário de pico deve ser o mesmo nas duas telas. | Página Inicial: "00h - 01h". Check-in: "Horário de maior movimento: 18h às 20h". |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Página Inicial / Check-in | C09-CT12: Horário de pico entre a Página Inicial e o Check-in |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]() |
+
+---
+
+### 🐞 **Bug 92: Mensagem genérica ao salvar enquete vazia**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-092 | Ao salvar uma enquete com o formulário vazio, a requisição retorna sucesso (200), mas a tela exibe "Erro ao salvar enquete", sem indicar o campo obrigatório. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Baixa | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a tela "Enquetes". |
+| 2. Clicar no botão "Nova Enquete". |
+| 3. Manter todos os campos vazios e clicar em "Salvar". |
+| 4. Observar a mensagem e a listagem. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | A tela exibe "Erro ao salvar enquete" sem indicar o que falta. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Cadastros auxiliares / Enquetes | C20-CT03: Cadastro de Enquetes com o formulário vazio |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]() |
+
+---
+
+### 🐞 **Bug 93: Cadastro de atividade aceita registro em branco**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-093 | Ao salvar o formulário de Atividades vazio, o sistema cria uma atividade sem nome, descrição e pontuação, sem mensagem de validação. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a tela "Atividades". |
+| 2. Clicar no botão "Nova Atividade". |
+| 3. Manter todos os campos vazios e clicar em "Salvar". |
+| 4. Observar a mensagem e a listagem. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | O registro é criado (retorno 201) e a listagem passa de 4 para 5 atividades, com uma linha em branco. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Cadastros auxiliares / Atividades | C20-CT04: Cadastro de Atividades com o formulário vazio |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]() |
+
+---
+
+### 🐞 **Bug 94: Cadastro de objetivo de treino aceita registro em branco**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-094 | Ao salvar o formulário de Objetivos de Treino vazio, o sistema cria um objetivo sem nome, sem mensagem de validação. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a tela "Objetivos de Treino". |
+| 2. Clicar no botão "Novo Objetivo". |
+| 3. Manter todos os campos vazios e clicar em "Salvar". |
+| 4. Observar a mensagem e a listagem. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | O registro é criado (retorno 201) e a listagem passa de 0 para 1 objetivo, com uma linha em branco. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Cadastros auxiliares / Objetivos de Treino | C20-CT07: Cadastro de Objetivos de Treino com o formulário vazio |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]() |
+
+---
+
+### 🐞 **Bug 95: Cadastro de tipo de pagamento aceita registro em branco**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-095 | Ao salvar o formulário de Tipos de Pagamento vazio, o sistema cria um tipo de pagamento sem nome, sem mensagem de validação. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a tela "Tipos de Pagamento". |
+| 2. Clicar no botão "Novo". |
+| 3. Manter todos os campos vazios e clicar em "Salvar". |
+| 4. Observar a mensagem e a listagem. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | O registro é criado (retorno 201) e a listagem passa de 10 para 11 tipos, com uma linha em branco. |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Cadastros auxiliares / Tipos de Pagamento | C20-CT08: Cadastro de Tipos de Pagamento com o formulário vazio |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]() |
+
+---
+
+### 🐞 **Bug 96: Erro interno ao salvar pergunta de anamnese vazia**
+
+| **ID** | **Descrição** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BUG-096 | Ao salvar uma pergunta de anamnese com o formulário vazio, a requisição retorna erro 500 e a tela exibe "Erro ao salvar pergunta", sem indicar o campo obrigatório. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| --------------------- | -------------------------- | ---------- |
+| Média | Média | Aberto |
+
+| **Passo a passo para simular o bug** |
+| -------------------------------------------------------------- |
+| 1. Acessar a tela "Perguntas de Anamnese". |
+| 2. Clicar no botão "Nova Pergunta". |
+| 3. Manter todos os campos vazios e clicar em "Salvar". |
+| 4. Observar a mensagem e a listagem. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| O sistema deve informar o campo obrigatório, sem criar registro em branco e sem erro do servidor. | A requisição retorna erro 500 e a tela exibe "Erro ao salvar pergunta". |
+
+| **Ambiente** |
+| ------------------------ |
+| Ambiente de homologação. |
+| Desktop com Linux. |
+| Navegador Google Chrome. |
+| Sistema SIFIT. |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| -------------------------- | ------------------------------------------ |
+| Cadastros auxiliares / Perguntas de Anamnese | C20-CT09: Cadastro de Perguntas de Anamnese com o formulário vazio |
+
+|                    **Evidência(s)**                     |
+| :-----------------------------------------------------: |
+| [Vídeo]() |
